@@ -1,0 +1,15 @@
+.row#img__main.mx-auto
+    .col-12.mb-4
+            .card.h-100.shopping__card.mb-2 
+                .card-body
+                    .shopping__img-wrapper.d-block.mx-auto.text-center.w-75
+                        img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg", alt="")
+    .row#img_gallery
+        .col-12
+            .row.text-left
+                -for(i=0; i<3;i++ )
+                    .col-3.mb-4
+                        img.border.p-3.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sd.jpg", alt="")
+
+    .row#quantity__msg.w-100
+        include ../../shopping/item-detail/item-detail__quantity-msg.pug

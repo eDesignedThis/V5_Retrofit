@@ -1,0 +1,16 @@
+.row.align-items-center#promo-filter 
+    .col-lg-7
+        h5 My Promotions
+    .col-lg-5
+        .row 
+            .col-6
+                select#sort_promos.custom-select(name="sort_promos")
+                    option(value="1") Active
+                    option(value="2") All
+            .col-6
+                form(action="")
+                    .input-group    
+                        input.form-control#search_promos(type="text" placeholder='Search')
+                        .input-group-append 
+                            span.input-group-text 
+                                .fas.fa-search

@@ -1,0 +1,28 @@
+extends ../master-templates/template__width__slim.pug
+
+block styles
+   
+block meta-title
+    title Profile
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row.bg-white.p-4
+        .col-12
+            h1 Profile
+            p This is the information currently in your profile. To change this information, update any of the fields below and then click Save Changes at the the bottom of the page.
+            small  We cannot change your SSN. This information needs to be consistent for us to track your claims. 
+            
+        .col-12.text-left
+            include ../pages/forms/form__Profile.pug
+                       
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

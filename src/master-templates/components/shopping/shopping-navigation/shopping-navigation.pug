@@ -1,0 +1,48 @@
+.row#shopping-navigation.align-items-center.bg-secondary.py-3
+    //- .col-12.col-xl-10.text-left.mx-auto
+    .container-fluid
+        .row.align-items-center 
+            .col-8.col-sm-3.col-lg-2.mb-3.mb-sm-0.order-1
+                .dropdown
+                    button#megamenu_dropdownMenuButton.btn.btn-primary.btn-block.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                        | Browse
+                    .dropdown-menu(aria-labelledby='megamenu_dropdownMenuButton')
+                        .row 
+                            -for(i=0; i<3; i++)
+                                .col-md-3
+                                    h2 Column
+                                    ul.nav.flex-column
+                                        -for(j=0; j<25; j++)
+                                            li.nav-item
+                                                a.nav-link(href="") Category
+                            .col-md-3.bg-warning
+                                h2 Image Column
+                                                
+            .col-12.col-sm-7.col-lg-8.col-9.mb-sm-0.order-3.order-sm-2
+                .input-group
+                    .input-group-prepend.d-none.d-xl-block 
+                        select#departments-select.custom-select(name="")
+                            option(value="1") All Departments
+                            option(value="2") Apple Store
+                            option(value="3") Baby
+                            option(value="4") Books
+                            
+                    input.form-control(type="text")
+                    .input-group-append 
+                        span.input-group-text
+                            .fas.fa-search
+            .col-4.col-lg-2.mx-auto.col-sm-2.order-1.mb-2.mb-sm-0.order-sm-3
+                .row.align-items-center 
+                    .col-4
+                        a.text-light.small(href="/dist/pages/modules/shopping/cart.html")
+                            span.fas.fa-shopping-cart
+                            small.d-none.d-xl-block Cart
+                            
+                    .col-4
+                        a.text-light.small(href="/dist/pages/modules/shopping/orders.html")
+                            span.fas.fa-truck
+                            small.d-none.d-xl-block Orders
+                    .col-4
+                        a.text-light.small(href="/dist/pages/modules/shopping/wishlist.html")
+                            span.fas.fa-heart
+                            small.d-none.d-xl-block Wishlist

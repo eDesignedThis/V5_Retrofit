@@ -1,0 +1,46 @@
+extends ../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title Leaderboard
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Leaderboard
+         
+            p See where you and your competitors rank.
+
+        .col-12.text-left
+            .table-responsive
+                table.table.table-striped.table-hover
+                    thead
+                        th(scope="col") #
+                        th(scope="First Name") First Name
+                        th(scope="Last Name") Last Name 
+                        th(scope="Region") Region
+                        th.text-right(scope="Points Awarded") Points Awarded
+                    tbody#leaderboard 
+                
+
+
+              
+               
+        
+
+
+           
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

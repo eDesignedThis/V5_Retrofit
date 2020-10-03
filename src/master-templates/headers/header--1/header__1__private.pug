@@ -1,0 +1,44 @@
+header.header__1.header__private.bg-dark
+    //- Original 
+        //- .row.mx-auto
+        //-     .col-12.col-xl-10.mx-auto
+        //-         .row.mx-auto
+        //-             .col-6.col-sm-3.col-xl-2.mx-auto.py-2
+        //-                 img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="Demo 15 header logo")
+        //-         nav.navbar.navbar-expand-xl.navbar-light
+        //-             a.navbar-brand(href='/dist/home.html') Demo 15
+        //-             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavbar', aria-controls='mainNavbar', aria-expanded='false', aria-label='Toggle navigation')
+        //-                 span.navbar-toggler-icon
+        //-             #mainNavbar.collapse.navbar-collapse
+        //-                 ul.navbar-nav.ml-auto#header__nav__private
+
+    //- Option - 1
+        //- .container.flex-column
+        //-     .logo-wrapper.mx-auto.align-items-center(style="width:10vw; object-fit: contain; object-position: center;")
+        //-         img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="Demo 15 header logo")
+            
+            nav.navbar.navbar-expand-xl.navbar-light
+                a.navbar-brand(href='/dist/home.html') Demo 15
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavbar', aria-controls='mainNavbar', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #mainNavbar.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto#header__nav__private
+    .container-fluid
+        nav.navbar.navbar-expand-xl.navbar-dark
+            .row.justify-content-between.align-items-center 
+                .col-9.col-sm-10.col-lg-11.col-xl-3.header__logo__branding
+                    .row.align-items-center 
+                        .col-6.col-sm-4.col-md-3.col-lg-2.col-xl-4.border
+                            img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="Demo 15 header logo")
+                        .col-12.col-sm-8.col-md-9.col-lg-10.col-xl-8.d-none.d-sm-block
+                            a.navbar-brand.d-block.small.text-wrap.mr-0.font-weight-bold.text-uppercase(href='/dist/home.html') 
+                                |   Demo 15 - Total Recognition
+                                span.small.header__sub-title.d-block.text-capitalize RewardTrax Branded Demo
+                .col-3.col-sm-2.col-md-1.d-xl-none.text-right
+                    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavbar', aria-controls='mainNavbar', aria-expanded='false', aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                .col-12.col-xl-9
+                    #mainNavbar.collapse.navbar-collapse
+                        ul.navbar-nav.ml-auto.text-xl-center#header__nav__private
+
+

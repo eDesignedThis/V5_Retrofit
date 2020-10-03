@@ -1,0 +1,114 @@
+{
+  "public": [
+    {
+      "name": "Activate Account",
+      "url": "./dist/pages/invitation.html"
+    },
+    {
+      "name": "Enroll",
+      "url": "./dist/pages/enrollment.html"
+    }
+  ],
+  "private": [
+    {
+      "name": "Welcome",
+      "url": "./dist/pages/home.html"
+    },
+    {
+      "name": "My Account",
+      "url": "./dist/pages/history.html"
+    },
+    {
+      "name": "Quick Points",
+      "url": "./dist/pages/quickpoints.html"
+    },
+    {
+      "name": "Performance Tracking",
+      "url": "./dist/pages/modules/performance-tracking/claimslanding-v4.html"
+    },
+    {
+      "name": "Leaderboard",
+      "url": "./dist/pages/leaderboard.html"
+    },
+    {
+      "name": "Learn & Earn",
+      "url": "./dist/pages/modules/learn-n-earn/learn-n-earn.html"
+    },
+    {
+      "name": "Shopping",
+      "url": "./dist/pages/modules/shopping/shopping-landing.html"
+    },
+    {
+      "name": "Profile",
+      "url": "./dist/pages/profile.html"
+    },
+    {
+      "name": "Contact",
+      "url": "./dist/pages/contact.html"
+    }
+  ],
+  "ftrPublic": [
+    {
+      "name": "FAQ",
+      "url": "/dist/pages/faq.html"
+    },
+    {
+      "name": "Terms",
+      "url": "/dist/pages/terms.html"
+    },
+    {
+      "name": "Privacy",
+      "url": "/dist/pages/privacy.html"
+    },
+    {
+      "name": "Rules",
+      "url": "/dist/pages/rules.html"
+    }
+  ],
+  "ftrPrivate": [
+    {
+      "name": "FAQ",
+      "url": "/dist/pages/faq.html"
+    },
+    {
+      "name": "Terms",
+      "url": "/dist/pages/terms.html"
+    },
+    {
+      "name": "Privacy",
+      "url": "/dist/pages/privacy.html"
+    },
+    {
+      "name": "Rules",
+      "url": "/dist/pages/rules.html"
+    },
+    {
+      "name": "All Wall",
+      "url": "/dist/pages/allwall.html"
+    },
+    {
+      "name": "Communications",
+      "url": "/dist/pages/communications.html"
+    },
+    {
+      "name": "Clients",
+      "url": "/dist/pages/clients.html"
+    },
+    {
+      "name": "Who We Are",
+      "url": "/dist/pages/whoweare.html"
+    },
+    {
+      "name": "Modules",
+      "url": "/dist/pages/modules.html"
+    },
+    {
+      "name": "Mobile App",
+      "url": "/dist/pages/mobileapp.html"
+    },
+    {
+      "name": "Logout",
+      "url": "./login.html"
+    }
+  ]
+}

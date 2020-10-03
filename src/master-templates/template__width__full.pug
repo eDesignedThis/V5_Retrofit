@@ -1,0 +1,25 @@
+extends ./layout.pug
+
+block styles
+
+block meta-title
+    title Template: Full Width
+
+block vertical-alignment    
+    body.d-flex.flex-column
+        block header
+            header.bg-dark.text-light
+                h1 Header
+        main.flex-grow-1.d-flex.flex-column.align-items-center
+            .container-fluid
+                .row.text-center
+                    .col-12.mx-auto
+                        block content
+                            h1 Template: Full Width
+                            p Page that uses full width of screen. Mostly used for 'shopping' module Lorem1400
+                        
+        block footer
+            footer.bg-dark.text-light
+                h2 Footer
+
+block scripts

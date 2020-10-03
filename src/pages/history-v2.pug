@@ -1,0 +1,77 @@
+extends ../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title My Account
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 My Account
+            p Here you can view your order history detailing all of the points you have redeemed. 
+          
+    .row
+        //- .col-12.text-left
+        //-     include ../master-templates/components/filter-bar/promo-filter.pug
+    .row
+        .col-12.text-left
+            //- include ../master-templates/components/promotion-card/promotion-card.pug
+            //- #promotions-grid
+
+
+            ul#promotions-grid.list-group.list-group-flush.border-0
+                script#promo-item(type='text/html')
+                    -for(i=0; i<5; i++)
+                    .list-group-item.border-0
+                        .card.promotion-grid-card.shadow.border-0
+                            .card-body.pb-0
+                                .row
+                                    .col-12.col-xl-4.mb-3
+                                        .card.h-100.border-0
+                                            .card-body.bg-light
+                                                small.card-title.text-uppercase.font-weight-bold.text-secondary.d-block.mb-2 Promotion Name
+                                                p.promotion_name 
+                                                .row.text-white.align-items-center.bg-primary.mx-1.pt-3.pt-sm-0
+                                                    .col-sm-6
+                                                        p.mb-0.text-center.text-sm-left Total Claims
+                                                    .col-sm-6.py-3.text-center.text-sm-right
+                                                        p.h3.mb-0.total_claims 67
+                                    .col-12.col-sm-6.col-xl-2.mb-3
+                                        .card.h-100.bg-light.border-0
+                                            .card-body.d-flex.flex-column.justify-content-between
+                                                small.card-title.text-uppercase.font-weight-bold.text-muted.d-block Approved
+                                                .d-block.text-right
+                                                    span.claims_approved.h6.font-weight-light 23
+                                    .col-12.col-sm-6.col-xl-2.mb-3
+                                        .card.h-100.bg-light.border-0
+                                            .card-body.d-flex.flex-column.justify-content-between
+                                                small.card-title.text-uppercase.font-weight-bold.text-muted.d-block Pending
+                                                .d-block.text-right
+                                                    span.claims_pending.h6.font-weight-light 656
+                                    .col-12.col-sm-6.col-xl-2.mb-3
+                                        .card.h-100.bg-light.border-0
+                                            .card-body.d-flex.flex-column.justify-content-between
+                                                small.card-title.text-uppercase.font-weight-bold.text-muted.d-block Needs Verification
+                                                .d-block.text-right
+                                                    span.claims_need_verification.h6.font-weight-light 953
+                                    .col-12.col-sm-6.col-xl-2.mb-3
+                                        .card.h-100.bg-light.border-0
+                                            .card-body.d-flex.flex-column.justify-content-between
+                                                small.card-title.text-uppercase.font-weight-bold.text-muted.d-block Awarded
+                                                .d-block.text-right
+                                                    span.claims_awarded.h6.font-weight-light 433
+                                    .col-12.mb-3
+                                        a.d-block.text-right(href="#") Details
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

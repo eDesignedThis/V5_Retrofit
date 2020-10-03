@@ -1,0 +1,139 @@
+extends ../../../master-templates/template__width__full.pug
+
+block styles
+    style.
+        main{padding-top: 0!important;}
+
+
+block meta-title
+    title Shopping Search Results
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../../../master-templates/components/shopping/shopping-header.pug
+    include ../../../master-templates/components/shopping/shopping-navigation/shopping-sections-tab.pug
+
+    //- .row.section.section__reward-yourself.bg-light.py-5.d-none.d-md-block
+    .row.section.section__reward-yourself.bg-light.py-2
+        .col-12.col-xl-10.mx-auto
+            .row.align-items-center.justify-content-between 
+                .col-sm-8.text-sm-left.mb-2.mb-sm-0
+                    //- h2.text-left Shopping Search Results
+                    small.mb-0 1-16 of over 120,050,500 results for 
+                        span.text-primary.font-weight-bold.mx-1 '[search-term]'
+                .col-sm-4.col-lg-2
+                    select#sort.custom-select(name="search-filter") 
+                        option(value="0" selected) Sort By:
+                        option(value="1") Price: Low to High
+                        option(value="2") Price: High to Low
+                        option(value="3") Newest Arrivals
+
+            
+    .row.section.section__search-results
+        //- .col-12.col-xl-10.text-left.mx-auto
+        //-     h2 Featured Categories
+        //- .col-12.col-xl-10.text-left.mx-auto
+        //-     .row 
+        //-         .col-xl-6.bg-light.shadow.py-5
+        //-         .col-xl-6.bg-primary.py-5
+        .col-12.col-xl-10.text-left.mx-auto.mb-3.pt-2
+            //- h2 Results
+        .col-12.col-xl-10.text-center.mx-auto
+            .row
+                .col-12.col-md-4.col-lg-3.text-left.flex-column
+                    #filter__departments.mb-3.pb-3.border-bottom
+                        p.mb-0.font-weight-bold Departments
+                        ul.ml-2.list-group.small
+                            li.border-0 Electronics
+                            li.border-0 Audio 
+                            li.border-0 Cameras & Camcorders
+                            
+                    #filter__delivery-options.mb-3.pb-3.border-bottom
+                        p.mb-0.font-weight-bold Delivery Options
+                        ul.ml-2.list-group.small
+                            li.border-0 Ship to Address
+                            li.border-0 Store Pickup
+                    #filter__delivery-options.mb-3.pb-3.border-bottom
+                        p.mb-0.font-weight-bold Brand
+                        ul.ml-2.list-group.small
+                            li.border-0 Apple
+                            li.border-0 HP
+                            li.border-0 MOSISO
+                            li.border-0 Acer
+                            li.border-0 Lenovo
+                    #filter__points
+                        p.mb-0.font-weight-bold Points
+                        ul.ml-2.list-group.small
+                            li.border-0 Under 250
+                            li.border-0 500 to 600
+                            li.border-0 600 to 700
+                            li.border-0 800 to 1000
+                            li.border-0 1000 & Above
+                            li.border-0
+                                .form-group.mt-3
+                                    .row.align-items-center 
+                                        .col-5.mb-3
+                                            label.font-weight-bold(for="point-min") Min
+                                            input.form-control.d-block#point-min(type="text")
+                                        .col-2.text-center.px-0
+                                            p.mb-0  -to-
+                                        .col-5.mb-3
+                                            label.font-weight-bold(for="point-max") Max
+                                            input.form-control.d-blocki#point-max(type="text")
+                                        .col-12
+                                            button.btn.btn-outline-primary.btn-block(type='submit')
+                                                span.fas.fa-search
+                                                span.small.d-xl-inline.ml-1 Filter By Points
+                              
+                .col-12.col-md-8.col-lg-9#shopping-cart__item__wrapper
+                    -for(i=0; i<4; i++)
+                        .row.border-bottom.mb-3
+                            .col-4.mb-4
+                                .card.shopping__card.mb-2 
+                                    .card-body.d-flex.flex-column.justify-content-center.align-items-center
+                                        .shopping__img-wrapper.d-block.mx-auto.text-center
+                                            img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg", alt="")
+                            .col-8.text-left
+                                .row#item__title 
+                                    .col-12.mb-3
+                                        a.shopping__item-title.line-clamp.text-dark(href='../shopping/item-detail.html') Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray
+                                        small
+                                            span.font-weight-bold Model:
+                                            span.ml-2.item__model-number [item-number]
+                                .row.text-left#itemPriceRow.mb-2 
+                                    .col-12.col-md-4
+                                        small.text-success 
+                                            span.fas.fa-certificate
+                                            span.ml-1 On Sale Now!
+                                        p.font-weight-bold.mb-0 Price:
+                                            span.font-weight-normal.item__price.mx-1.text-success 90,650
+                                            span.small
+                                                small Points
+                                    .col-12.col-md-8
+                                        small
+                                            span.fas.fa-running.mr-1
+                                            span In-Store Pickup Available
+                    #pagination.row
+                        .col-6.mx-auto
+                            nav(aria-label="Search Results Pagination")
+                                ul.pagination.justify-content-center
+                                    li.page-item
+                                        a.page-link(href="#") Previous
+                                    li.page-item
+                                        a.page-link(href="#") 1
+                                    li.page-item
+                                        a.page-link(href="#") 2
+                                    li.page-item
+                                        a.page-link(href="#") 3
+                                    li.page-item
+                                        a.page-link(href="#") 4
+                                    li.page-item
+                                        a.page-link(href="#") Next
+
+                                
+    .row.section.section__disclaimer
+        .col-12.col-xl-10.text-left.mx-auto
+            include ../../../master-templates/components/shopping/shopping-disclaimer.pug

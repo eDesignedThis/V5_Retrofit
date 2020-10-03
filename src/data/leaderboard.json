@@ -1,0 +1,144 @@
+{
+  "leaderboard": [
+    {
+      "id": 1,
+      "first_name": "Petronia",
+      "last_name": "Riddock",
+      "region": "West",
+      "points": 261539
+    },
+    {
+      "id": 2,
+      "first_name": "Bordie",
+      "last_name": "Morefield",
+      "region": "West",
+      "points": 354735
+    },
+    {
+      "id": 3,
+      "first_name": "Stanfield",
+      "last_name": "Whardley",
+      "region": "East",
+      "points": 231259
+    },
+    {
+      "id": 4,
+      "first_name": "Harlan",
+      "last_name": "Ashpole",
+      "region": "West",
+      "points": 390759
+    },
+    {
+      "id": 5,
+      "first_name": "Peggi",
+      "last_name": "Donett",
+      "region": "North",
+      "points": 523621
+    },
+    {
+      "id": 6,
+      "first_name": "Dyane",
+      "last_name": "Yoodall",
+      "region": "East",
+      "points": 311257
+    },
+    {
+      "id": 7,
+      "first_name": "Candide",
+      "last_name": "Lambersen",
+      "region": "West",
+      "points": 473008
+    },
+    {
+      "id": 8,
+      "first_name": "Rudolf",
+      "last_name": "Giorio",
+      "region": "West",
+      "points": 356145
+    },
+    {
+      "id": 9,
+      "first_name": "Linn",
+      "last_name": "Emilien",
+      "region": "East",
+      "points": 459631
+    },
+    {
+      "id": 10,
+      "first_name": "Towny",
+      "last_name": "Gawkroge",
+      "region": "East",
+      "points": 332102
+    },
+    {
+      "id": 11,
+      "first_name": "Monte",
+      "last_name": "Glyssanne",
+      "region": "South",
+      "points": 398843
+    },
+    {
+      "id": 12,
+      "first_name": "Welbie",
+      "last_name": "Dymott",
+      "region": "East",
+      "points": 349561
+    },
+    {
+      "id": 13,
+      "first_name": "Tedda",
+      "last_name": "Feake",
+      "region": "East",
+      "points": 330673
+    },
+    {
+      "id": 14,
+      "first_name": "Mychal",
+      "last_name": "Gellan",
+      "region": "East",
+      "points": 519287
+    },
+    {
+      "id": 15,
+      "first_name": "Kliment",
+      "last_name": "Gabites",
+      "region": "North",
+      "points": 265565
+    },
+    {
+      "id": 16,
+      "first_name": "Fernande",
+      "last_name": "Bellows",
+      "region": "West",
+      "points": 408464
+    },
+    {
+      "id": 17,
+      "first_name": "Esme",
+      "last_name": "Perfili",
+      "region": "South",
+      "points": 446221
+    },
+    {
+      "id": 18,
+      "first_name": "Tedmund",
+      "last_name": "Stelle",
+      "region": "East",
+      "points": 341084
+    },
+    {
+      "id": 19,
+      "first_name": "Mimi",
+      "last_name": "Pranger",
+      "region": "East",
+      "points": 305168
+    },
+    {
+      "id": 20,
+      "first_name": "Mycah",
+      "last_name": "McBride",
+      "region": "North",
+      "points": 378042
+    }
+  ]
+}

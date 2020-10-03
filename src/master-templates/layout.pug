@@ -1,0 +1,40 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.13.1/css/all.css', integrity='sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q', crossorigin='anonymous')
+  // DevExtreme
+  link(rel='stylesheet', href='https://cdn3.devexpress.com/jslib/20.1.6/css/dx.common.css')
+  link(rel='stylesheet', href='https://cdn3.devexpress.com/jslib/20.1.6/css/dx.light.css')
+ 
+
+  // Bootstrap CSS
+  link(rel='stylesheet', href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+  link(rel="stylesheet", href="/src/style.css")
+  block styles
+  block meta-title
+    title Layout
+block vertical-alignment    
+    body.d-flex.flex-column
+        header
+        main.flex-grow-1.bg-warning
+            .container-fluid
+                .row 
+                    .col-12.col-xl-10.mx-auto
+                        h1 Hello, world!
+                     
+        footer
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='/node_modules/jquery/dist/jquery.min.js')
+script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo', crossorigin='anonymous')
+script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+ // DevExtreme library
+script(type='text/javascript', src='https://cdn3.devexpress.com/jslib/20.1.6/js/dx.all.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js')
+script(src='/src/app.js')
+block scripts
+

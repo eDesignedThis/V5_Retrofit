@@ -1,0 +1,122 @@
+extends ../master-templates/template__width__full.pug
+
+block styles
+    style. 
+        .background-circle{fill: none!important;}
+
+
+block meta-title
+    title Welcome
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../master-templates/components/jumbotrons/home-jumbotron.pug
+
+
+    .row.bg-primary.text-white.justify-content-center.py-5 
+        .col-lg-6
+            h2 Thank You For Being Our Partner!
+            p.lead.mb-0 Use your points to explore and discover the world around you. From plane tickets, to hotel stays and activities, the possibilities are endless.
+    .row
+        .col-lg-4.bg-light.p-5
+            h4.widget-title Wish List
+            ul.list-unstyled.text-left.list-group-flush
+                -for(i=0; i<3; i++)
+                    li.list-group-item.media.mb-2
+                        .row 
+                            .col-4
+                                img.mr-3.img-fluid(src='https://images-na.ssl-images-amazon.com/images/I/91J0vrjGY3L._AC_SX355_.jpg', alt='...')
+                            .col-8
+                                .media-body
+                                    h6.mt-0.mb-1 Sony MASTER Series XBR-85Z9G
+                                    .row 
+                                        .col-3
+                                            p.mb-0 Points
+                                        .col-9
+                                            p.mb-0 2,015,813
+            a(href="#") See All
+          
+
+        .col-lg-4.bg-dark.text-light.p-5.justify-content-center
+            h4.widget-title Goal Tracking
+                #circle
+        .col-lg-4.bg-light.p-5
+            h4.widget-title Trivia
+            p.text-left  Who's the best team in college football?
+            form.text-left(action="")
+                ul.list-group.list-group-flush.text-left.mb-4
+                    li.list-group-item.bg-transparent
+                        .form-check
+                            input#exampleRadios1.form-check-input(type='radio', name='exampleRadios', value='option1', checked='')
+                            label.form-check-label(for='exampleRadios1')
+                                | University of Georgia
+                    li.list-group-item.bg-transparent
+                        .form-check
+                            input#exampleRadios2.form-check-input(type='radio', name='exampleRadios', value='option2')
+                            label.form-check-label(for='exampleRadios2')
+                                | University of Georgia
+                    li.list-group-item.bg-transparent
+                        .form-check
+                            input#exampleRadios3.form-check-input(type='radio', name='exampleRadios', value='option2')
+                            label.form-check-label(for='exampleRadios3')
+                                | University of Georgia
+                    li.list-group-item.bg-transparent
+                        .form-check
+                            input#exampleRadios4.form-check-input(type='radio', name='exampleRadios', value='option3', disabled='')
+                            label.form-check-label(for='exampleRadios4')
+                                | Any other lame school
+                .form-group
+                    .row
+                        .col-6.mx-auto
+                            a.btn.btn-primary.btn-block(href="") Submit Answer
+
+    .row.justify-content-center.bg-white.py-5 
+        .col-lg-6 
+            h2 My Awards
+            p.lead Review your awards and adjustments.
+        .col-lg-8
+            .table-responsive 
+                table.table.table-striped.table-hover
+                    thead
+                        th Date 
+                        th Description
+                        th.text-right Amount
+                    tbody#awards-container 
+                        tr
+                            td 10/24/2018
+                            td Thanks for your trust - points for training
+                            td.text-right 500
+        .col-12.text-center 
+            a(href="/dist/pages/history.html") See More
+
+
+
+
+
+
+    
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/circliful/2.0.17/circliful.min.js')
+
+    script.
+        const circle = circliful.newCircle({
+            percent: 70,
+            id: 'circle',
+            strokeGradient: ["#05a", "#0a5"],
+            type: 'donut',
+            icon: 'f085',
+            backgroundCircleWidth: 10,
+            foregroundCircleWidth: 10,
+            strokeLinecap: "round",
+            });

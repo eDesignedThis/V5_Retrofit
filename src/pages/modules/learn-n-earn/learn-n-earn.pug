@@ -1,0 +1,55 @@
+extends ../../../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title Learn & Earn
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Learn & Earn
+         
+            p The Learn & Earn Module allows your participants to earn points when they pass tests and quizzes. 
+
+        .col-12.text-left
+            h3 Available Questionnaires
+        .col-12.text-left
+            ul.list-group.list-group-flush.border-0#avail_quizzes
+                -for(i=0; i<5; i++)
+                    li.list-group-item.border-0.px-0 
+                        .card.shadow 
+                            .card-body
+                                .row
+                                    .col-6.mb-4.mb-xl-0.col-md-6.col-lg-7
+                                        small.d-block.font-weight-bold.text-uppercase.text-muted Title
+                                        a.promo-title.mb-0(href="../learn-n-earn/learning-quiz-landing.html") About Incentive Solutions
+                                    .col-6.mb-4.mb-xl-0.col-md-3.col-lg-3.text-center
+                                        small.d-block.font-weight-bold.text-uppercase.text-muted Closes After
+                                        .close-date.mb-0 8/31/2021 
+                                    .col-12.col-md-2
+                                        small.d-block.font-weight-bold.text-uppercase.text-muted Summary
+                                        .quiz-type.mb-0 Type: Quiz
+                                        .quiz-questions Questions 3
+                
+
+
+              
+               
+        
+
+
+           
+            
+        
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

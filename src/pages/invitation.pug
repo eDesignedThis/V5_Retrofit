@@ -1,0 +1,42 @@
+extends ../master-templates/template__vertical__center__slim.pug
+
+block styles
+    style. 
+        main{background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png');background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+
+block meta-title
+    title Activate Account
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__public.pug
+
+block content
+    .row.bg-white.p-4.shadow 
+        .col-12.mb-2
+            h1 Activate Account
+            p Have you been invited to join our program? If so, enter your Invitation ID in the field below.
+            small.text-muted Step 1 of 2
+        .col-12.text-left
+            form(action="")
+                .form-group
+                    label(for="invitation_id") Invitation ID
+                    input.form-control#invitation_id(type="text")
+                .form-group
+                    button.btn.btn-primary.btn-block#invitation_submit_btn(type='submit') Activate
+                .form-group
+                    small If you're already registered, click
+                        span
+                            a.mx-1(href="./login.html") here
+                            | to login.
+    
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__public.pug
+
+
+
+
+block scripts

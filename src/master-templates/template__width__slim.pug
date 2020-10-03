@@ -1,0 +1,25 @@
+extends ./layout.pug
+
+block styles
+
+block meta-title
+    title Template: Slim Width
+
+block vertical-alignment    
+    body.d-flex.flex-column.h-100
+        block header
+            header.bg-dark.text-light
+                h1 Header
+        main.flex-grow-1.d-flex.flex-column.align-items-center.py-3.py-lg-5
+            .container-fluid
+                .row.text-center
+                    .col-12.col-xl-5.mx-auto
+                        block content
+                            h1 Template: Slim
+                            p Use this template for pages containing only contact forms or otherwise minimal text content.
+                        
+        block footer
+            footer.bg-dark.text-light
+                h2 Footer
+
+block scripts

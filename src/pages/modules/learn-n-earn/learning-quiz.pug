@@ -1,0 +1,55 @@
+extends ../../../master-templates/template__width__slim.pug
+
+block styles
+
+block meta-title
+    title Learn & Earn
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Learn & Earn
+         
+            p The Learn & Earn Module allows your participants to earn points when they pass tests and quizzes. 
+
+        .col-12.text-left
+            h3 About Incentive Solutions
+
+        .col-12.text-left
+            form(action="")
+                ol.list-group.list-group-flush.border-0
+                    -for(i=0; i< 10; i++)
+                        .list-group-item
+                            p.font-weight-bold What types of rewards does Incentive Solutions offer? 
+                            .form-check
+                                input#exampleRadios1.form-check-input(type='radio', name='exampleRadios', value='option1', checked='')
+                                label.form-check-label(for='exampleRadios1')
+                                    | Default radio
+                            .form-check
+                                input#exampleRadios2.form-check-input(type='radio', name='exampleRadios', value='option2')
+                                label.form-check-label(for='exampleRadios2')
+                                    | Second default radio
+                            .form-check
+                                input#exampleRadios3.form-check-input(type='radio', name='exampleRadios', value='option3', disabled='')
+                                label.form-check-label(for='exampleRadios3')
+                                    | Disabled radio
+                .form-group 
+                    a.btn.btn-primary(href="../learn-n-earn/learning-quiz-results.html") Submit Answers
+            
+
+
+                
+
+
+              
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

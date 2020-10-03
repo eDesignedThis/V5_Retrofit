@@ -1,0 +1,74 @@
+extends ../../../master-templates/template__width__full.pug
+
+block styles
+    style.
+        main{padding-top: 0!important;}
+
+
+block meta-title
+    title Shopping
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../../../master-templates/components/shopping/shopping-header.pug
+    include ../../../master-templates/components/shopping/shopping-navigation/shopping-sections-tab.pug
+    include ../../../master-templates/components/jumbotrons/shopping-jumbotron.pug
+
+    .row.section.section__reward-yourself.bg-light.py-5.d-none.d-md-block
+        .col-12.col-xl-10.text-left.mx-auto
+            h2 Reward Yourself
+
+        .col-12.col-xl-10.text-left.mx-auto
+            include ../../../master-templates/components/shopping/shopping-carousel.pug
+    
+
+    .row.section.section__featured-categories.py-5
+        //- .col-12.col-xl-10.text-left.mx-auto
+        //-     h2 Featured Categories
+        //- .col-12.col-xl-10.text-left.mx-auto
+        //-     .row 
+        //-         .col-xl-6.bg-light.shadow.py-5
+        //-         .col-xl-6.bg-primary.py-5
+        .col-12.col-xl-10.text-left.mx-auto.mb-3
+            h2 Featured Categories
+        .col-12.col-xl-10.text-center.mx-auto
+            .row
+                -for(i=0; i<9; i++)
+                    .col-6.col-xl-4.mb-4.h-100
+                        .card.h-100.shopping__card.mb-2 
+                            .card-body
+                                .shopping__img-wrapper.d-block.mx-auto.text-center.w-75
+                                    a(href="../shopping/search-results.html")
+                                        img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg", alt="")
+                        a.shopping__item-title.line-clamp(href="#") Category Name
+    .row.section.section__disclaimer
+        .col-12.col-xl-10.text-left.mx-auto
+            include ../../../master-templates/components/shopping/shopping-disclaimer.pug
+
+                    
+            
+
+
+        
+                  
+            
+
+
+              
+               
+        
+
+
+           
+            
+        
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

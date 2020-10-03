@@ -1,0 +1,70 @@
+form#form__profile(action="")
+    .form-group
+        label(for="profile__first-name") First Name
+        input.form-control#profile__first-name(type="text")
+    .form-group
+        label(for="profile__last-name") Last Name
+        input.form-control#profile__last-name(type="text")
+    .form-group
+        label(for="profile__birth-date") Birth Date
+        .input-group.date
+            input#profile__birth-date.form-control(type="text" required)
+            .input-group-append
+                span.input-group-text
+                    span.fas.fa-calendar
+    .form-group
+        label(for="profile__hire-date") Hire Date
+        .input-group.date
+            input#profile__hire-date.form-control(type="text" required)
+            .input-group-append
+                span.input-group-text
+                    span.fas.fa-calendar
+    .form-group
+        label(for="profile__communication-preference") Communication Preference
+        select#profile__communication-preference.custom-select(name="")
+            option(value="Choose..." selected) Choose
+            option(value="Email") Emails
+            option(value="SMS/Text") SMS/Text Message
+            option(value="Push Notification") Push Notfication
+        small *Not all communication is able to be sent to your preference.
+    .form-group.border-bottom
+        p When changing your email address, you must provide your Current Password to verify your identity.
+    .form-group
+        label(for="profile__email") Email Address
+        input.form-control#profile__email(type="email")
+    .form-group
+        label(for="profile__phone-number") Phone Number
+        input.form-control#profile__phone-number(type="text")
+    .form-group
+        label(for="profile__address") Street Address
+        input.form-control#profile__address(type="text")
+    .form-group
+        .row
+            .col-lg-7.mb-3.mb-lg-0
+                label(for="profile__city") City
+                input.form-control#profile__city(type="text")
+            .col-lg-2.mb-3.mb-lg-0
+                label(for="profile__state") State
+                input.form-control#profile__state(type="text")
+            .col-lg-3.mb-3.mb-lg-0
+                label(for="profile__zip") Zip
+                input.form-control#profile__zip(type="text")
+    
+
+
+    .form-group.border-bottom
+        h2 Update Password
+    .form-group
+        p Use the fields below to change your password. All fields are required when changing your password. If you do not want to change your password, leave the fields blank. Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.
+    .form-group
+        label(for="profile__password") Current Password
+        input.form-control#profile__password(type="password")
+    .form-group
+        label(for="profile__new-password") New Password
+        input.form-control#profile__password(type="password")
+    .form-group
+        label(for="profile__confirm-new-password") Confirm New Password
+        input.form-control#profile__confirm-password(type="password")
+    
+    .form-group
+        button.btn.btn-primary.btn-block#profile_submit_btn(type='submit') Complete profile

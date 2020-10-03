@@ -1,0 +1,61 @@
+.row.text-left#deliveryRow.mb-2
+    .col-12
+        p.font-weight-bold.mb-0 Delivery Options
+    .col-6.col-md-12.col-lg-6.mb-2.mb-md-1
+        .form-check
+            input#delivery_method1.form-check-input(type='radio' name='delivery_method' value='Ship to Address' checked='' )
+            label.form-check-label(for='delivery_method1')
+                | Ship to Address
+    .col-6.col-md-12.col-lg-6.mb-md-3
+        .form-check
+            input#delivery_method2.form-check-input(type='radio' name='delivery_method' value='In-Store Pickup' data-toggle="collapse" href="#select-store-msg" aria-expanded="false" aria-controls="select-store-msg")
+            label.form-check-label(for='delivery_method2')
+                | In-Store Pickup
+    .col-12
+            .alert.alert-secondary#select-store-msg.collapse
+                small.mb-0 You will select the store during checkout.
+                    span.d-block
+                        a(href="#") See available stores near you.
+    .col-12
+        .form-group#in-store-pickup__section.bg-light
+            .row
+                .col-12.mb-2
+                    p.lead.border-bottom.d-block Pick-up Location
+            .row.small 
+                .col-12
+                    p Enter your ZIP code to see where you can pick up this item.
+            .row.small.no-gutters.mb-4
+                .col-9.col-lg-8.col-xl-4
+                    input.form-control#pickup-location__search-field(type="text")
+                .col-3.col-lg-4.col-xl-2
+                    button.btn.btn-block.btn-secondary#search__pickup-locations(type='button') 
+                        span.fas.fa-search
+            .row
+                .col-12 
+                    p.mb-0.lead Store Locations
+            .row.small#pickup-location__results__success.d-none
+                .col-12
+                    .table-responsive 
+                        table.table.table-striped
+                            thead
+                                tr 
+                                    th(scope="col") Location
+                                    th(scope="col") Availability
+                                    th(scope="col")
+                            tbody
+                                -for(i=0; i<5; i++)   
+                                    tr
+                                        td
+                                            p.mb-0.font-weight-bold Northlake GA
+                                            p.mb-0 
+                                                a(href="#") Directions & Store Hours
+                                        td
+                                            p.mb-0 Order Today, Pick up on 
+                                                span.text-success 10/03/2020
+                                        td
+                                            a(href="#") Select
+            .row.small#pickup-location__results__fail
+                .col-12
+                    .alert.alert-secondary
+                        p.font-weight-bold.mb-0 No Stores Found
+                        p.mb-0 We couldn't find any stores within 25 miles of [zip-code].

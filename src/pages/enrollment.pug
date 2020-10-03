@@ -1,0 +1,31 @@
+extends ../master-templates/template__width__slim.pug
+
+block styles
+    style. 
+        main{background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png');background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+
+block meta-title
+    title Enrollment
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__public.pug
+
+block content
+    .row.bg-white.p-4.shadow 
+        .col-12
+            h1 Enrollment
+            p.lead.mb-0 Enroll in the [program-name] Program
+            small  All fields are required
+            
+        .col-12.text-left
+            include ../pages/forms/form__enrollment.pug
+                       
+block footer
+    include ../master-templates/footers/footer--1/footer__1__public.pug
+
+
+
+
+block scripts

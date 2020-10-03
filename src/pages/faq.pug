@@ -1,0 +1,30 @@
+extends ../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title FAQ
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Frequently Asked Questions
+            p Looking for answers? Most questions can be answered by searching the list below. 
+        .col-12.text-left
+            ul.list-group.list-group-flush#faq-container
+                li.list-group-item.bg-transparent
+
+           
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

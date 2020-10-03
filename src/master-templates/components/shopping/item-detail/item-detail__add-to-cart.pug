@@ -1,0 +1,43 @@
+.row.mb-3
+    .col-12.mb-3
+        button.btn.btn-block.btn-primary#add-to-cart__item-detail(type="button") Add To Cart
+    .col-12.mb-3#add-item__success
+        .card.text-left
+            .card-body
+                .row
+                    .col-12
+                        p.font-weight-bold.mb-0
+                            span.mr-1 Subtotal:
+                            span.font-weight-normal  -100,228,938
+                            //- span.font-weight-normal  90,650
+                        small.d-block.text-success.mb-4
+                            span.fas.fa-check.mr-1 
+                            | Your order qualifies for free shipping!
+                    .col-12.col-sm-6.col-md-12.mb-3.mb-sm-0.mb-md-3
+                        button.btn.btn-block.btn-primary(type="button") Proceed to Checkout
+                    .col-12.col-sm-6.col-md-12
+                        button.btn.btn-block.btn-outline-primary(type="button") Continue Shopping
+    .col-12.mb-3#add-item__fail
+        .card.text-left
+            .card-body
+                .row
+                    .col-12
+                            p.font-weight-bold Insufficient Points:
+                                span.d-block.d-lg-inline.mb-0.text-danger.font-weight-normal.ml-lg-2 -10,228,938
+                .row
+                    .col-12
+                        small.d-block.mb-2 You currently don't have enough points in your account to redeem this item(s).
+                .row
+                    .col-6.col-md-12.col-lg-7
+                        small.mb-0.font-weight-bold Current Points
+                    .col-6.col-md-12.col-lg-5.text-.text-lg-right
+                        small.mb-0 12,110,009
+                    .col-12.mt-4
+                        .alert.alert-secondary.mb-0
+                            small.mb-0 Currently, your remaining points do not meet the minimum threshold to qualify for the Buy-In option.
+                
+        
+    .col-12
+        a(href="#") 
+            span.fas.fa-heart
+            |   Save To Wishlist

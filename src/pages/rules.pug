@@ -1,0 +1,38 @@
+extends ../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title Program Rules
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Program Rules
+            p Get familiar with our program.
+        .col-12.text-left
+            ol.list-group.list-group-flush#rules-container
+               
+        .col-12.text-left
+            h2 General Information
+            ol.list-group.list-group-flush#genInfo-container
+           
+        .col-12.text-left 
+            h3 Additional Rules and Guidelines for the Rewards Program 
+            p.mb-0 The Registered Partner is responsible for federal, state and local income taxes on all rewards earned. Rewards Program must complete an IRS form 1099 and send it to you for any year in which your award earnings are more than $600. It is suggested that each reward earner consult a tax advisor in regard to reporting the reward income for income tax purposes. Any liability for federal, state or local income tax imposed on any reward earner will be the responsibility of the reward earner and not Rewards Program or the Program Headquarters.
+
+
+           
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

@@ -1,0 +1,39 @@
+#shopping__carousel.carousel.slide(data-ride='carousel')
+  
+  .carousel-inner.d-block
+    .carousel-item.active.p-3.mb-3
+        //-   img.d-block.w-100(src='...' alt='...')
+        .row 
+            -for(i=0; i<4; i++)
+                .col-6.col-xl-3.mb-4.h-100
+                    .card.h-100.shopping__card.mb-3 
+                        .card-body
+                            .shopping__img-wrapper.d-block.mx-auto.text-center.w-75
+                                a(href="../shopping/item-detail.html")
+                                    img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg", alt="")
+                    a.shopping__item-title.line-clamp(href="../shopping/item-detail.html") Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray
+                    small.d-block.text-muted.mb-1 90,650
+                        span.ml-1 points
+                    .row
+                      .col-6
+                          p.text-success.mb-0 On Sale!
+                      .col-6.text-right
+                        .fas.fa-running.mr-1 
+                        small In-Store Pickup
+                    
+    ol.carousel-indicators.bg-secondary.mb-0.rounded
+        li.active(data-target='#shopping__carousel' data-slide-to='0')
+        li(data-target='#shopping__carousel' data-slide-to='1')
+        li(data-target='#shopping__carousel' data-slide-to='2')
+                    
+
+    //- .carousel-item
+    //-   img.d-block.w-100(src='...' alt='...')
+    //- .carousel-item
+    //-   img.d-block.w-100(src='...' alt='...')
+  a.carousel-control-prev(href='#shopping__carousel' role='button' data-slide='prev')
+    span.carousel-control-prev-icon(aria-hidden='true')
+    span.sr-only Previous
+  a.carousel-control-next(href='#shopping__carousel' role='button' data-slide='next')
+    span.carousel-control-next-icon(aria-hidden='true')
+    span.sr-only Next

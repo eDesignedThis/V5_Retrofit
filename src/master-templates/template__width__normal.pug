@@ -1,0 +1,25 @@
+extends ./layout.pug
+
+block styles
+
+block meta-title
+    title Template: "Default" Normal Width
+
+block vertical-alignment    
+    body.d-flex.flex-column.h-100
+        block header
+            header.bg-dark.text-light
+                h1 Header
+        main.flex-grow-1.d-flex.flex-column.align-items-center.py-3.py-lg-5
+            .container-fluid
+                .row.text-center
+                    .col-12.col-xl-10.mx-auto
+                        block content
+                            h1 Template: Normal Width
+                            p Also known as 'default'. This template is used for most pages/screens on this site. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, dignissimos! Libero, repellat rem? Possimus eum, necessitatibus voluptas iusto id, neque provident error incidunt maiores repellat minima dolorem adipisci nisi voluptates omnis doloremque at officiis natus asperiores nulla qui quas? Aperiam sunt ea quibusdam amet minima nemo molestias autem possimus debitis quia, necessitatibus deserunt modi est ipsam a commodi mollitia velit earum doloribus reiciendis nulla, porro aspernatur! Id inventore, molestiae tempora ullam aliquam illum quis dolore mollitia error? Ex autem quos voluptate alias deleniti tempore soluta totam provident deserunt adipisci quae ipsa laudantium, nam molestiae minus vero temporibus ipsum sunt. Esse ratione eius laudantium aspernatur animi distinctio sit perspiciatis sint at, culpa blanditiis nam, odio alias enim, quas incidunt quisquam magni.
+                        
+        block footer
+            footer.bg-dark.text-light
+                h2 Footer
+
+block scripts

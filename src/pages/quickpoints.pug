@@ -1,0 +1,43 @@
+extends ../master-templates/template__width__slim.pug
+
+block styles
+
+block meta-title
+    title Quick Points
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Quick Points
+         
+            p Claim you rpoints by entering the certificate number found on your On-The-Spot certificate.
+
+        .col-12.text-left
+            form(action="")
+                .form-group
+                    label(for="quickpoints_number") Certificate Number
+                    input.form-control#quickpoints_number(type="text")
+                .form-group
+                    a.btn.btn-block.btn-primary(href="#")  Reward Me!
+    .row 
+        .col-12 
+            img.img-fluid(src='https://www.rewardtrax.com/brandeddemo15/images/ISIQuickpoints_Demo15.jpg')
+              
+               
+        
+
+
+           
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

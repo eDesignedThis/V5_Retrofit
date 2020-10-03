@@ -1,0 +1,41 @@
+extends ../../../master-templates/template__vertical__center__slim.pug
+
+block styles
+
+block meta-title
+    title Learn & Earn
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Learn & Earn
+         
+            p The Learn & Earn Module allows your participants to earn points when they pass tests and quizzes. 
+
+        .col-12.text-left
+            h3 About Incentive Solutions
+
+        .col-12.text-left
+            p.mb-0
+                span.font-weight-bold Instructions:
+                |   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, perspiciatis. Ullam repudiandae, deserunt odio doloribus hic commodi excepturi placeat laudantium.
+        .col-12
+            .embed-responsive.embed-repsonsive-16by9
+                .embed-responsive-item(src="https://youtu.be/npAAAO6Cpag" allowfullscreen) 
+        .col-12
+            a(href="../learn-n-earn/learning-quiz.html") Start Quiz 
+                
+
+
+              
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

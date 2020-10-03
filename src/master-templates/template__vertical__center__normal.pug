@@ -1,0 +1,25 @@
+extends ./layout__full-height.pug
+
+block styles
+
+block meta-title
+    title Template: Vertical Center Normal Width
+
+block vertical-alignment    
+    body.d-flex.flex-column.h-100
+        block header
+            header.bg-dark.text-light
+                h1 Header
+        main.flex-grow-1.d-flex.flex-column.justify-content-center.align-items-center
+            .container-fluid
+                .row.text-center
+                    .col-12.col-xl-10.mx-auto.p-4
+                        block content
+                            h1 Template: Vertical Center
+                            p Use this template for pages requiring vertically centered content. Can be used with or without header/footer.
+                        
+        block footer
+            footer.bg-dark.text-light
+                h2 Footer
+
+block scripts

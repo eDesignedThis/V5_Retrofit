@@ -1,0 +1,97 @@
+form#form__checkout(action="")
+    .row.mb-2 
+        .col-12#disclaimer__change-of-address
+            .alert.alert-warning
+                small.mb-0
+                    span.fas.fa-exclamation-triangle
+                    span.ml-1.font-weight-bold  Note: 
+                    span.ml-1  Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items.
+    .row.mb-2
+        .col-12 
+            p.lead.border-bottom.d-block.pb-2 Recipient Info
+
+    .row
+        .col-12.col-md-6
+            .form-group
+                label(for="checkout__first-name") First Name
+                input.form-control#checkout__first-name(type="text")
+        .col-12.col-md-6
+            .form-group
+                label(for="checkout__last-name") Last Name
+                input.form-control#checkout__last-name(type="text")
+    .form-group
+        label(for="checkout__email") Email Address
+        input.form-control#checkout__email(type="email")
+    .form-group
+        label(for="checkout__phone-number") Phone Number
+        input.form-control#checkout__phone-number(type="text")
+    .form-group
+        label(for="checkout__address") Street Address
+        input.form-control#checkout__address(type="text")
+    .form-group
+        .row
+            .col-lg-7.mb-3.mb-lg-0
+                label(for="checkout__city") City
+                input.form-control#checkout__city(type="text")
+            .col-lg-2.mb-3.mb-lg-0
+                label(for="checkout__state") State
+                input.form-control#checkout__state(type="text")
+            .col-lg-3.mb-3.mb-lg-0
+                label(for="checkout__zip") Zip
+                input.form-control#checkout__zip(type="text")
+    .form-group#in-store-pickup__section.bg-light.p-3
+        .row
+            .col-12.mb-2
+                p.lead.border-bottom.d-block.pb-2 Pick-up Location
+        .row.small 
+            .col-12
+                p Enter your ZIP code to see where you can pick up this item.
+        .row.small.no-gutters.mb-4
+            .col-9.col-sm-5
+                input.form-control#pickup-location__search-field(type="text")
+            .col-3.col-sm-2
+                button.btn.btn-block.btn-secondary#search__pickup-locations(type='button') 
+                    span.fas.fa-search
+        .row
+            .col-12 
+                p Store Locations
+        .row.small#pickup-location__results
+            .table-responsive 
+                table.table.table-striped
+                    thead
+                        tr 
+                            th(scope="col") Location
+                            th(scope="col") Availability
+                            th(scope="col")
+                    tbody
+                        -for(i=0; i<5; i++)   
+                            tr
+                                td
+                                    p.mb-0.font-weight-bold Northlake GA
+                                    p.mb-0 
+                                        a(href="#") Directions & Store Hours
+                                td
+                                    p.mb-0 Order Today, Pick up on 
+                                        span.text-success 10/03/2020
+                                td
+                                    a(href="#") Select
+    .form-group
+        .alert.alert-secondary
+            .form-check
+                input.form-check-input(type="checkbox" value="" id="checkbox__confirm-order")
+                label.form-check-label(for="checkbox__confirm-order") Click the check box to confirm your order and agree to the
+                    span
+                        a(href="../return-policy.html")  return policy
+                    span .
+
+    .form-group
+        .row.align-items-center 
+            .col-12.col-sm-4.mb-2.mb-sm-0
+                button.btn.btn-primary.btn-block#checkout_submit_btn(type='submit' href='../shopping/receipt.html') Place Order
+            .col-12.col-sm-8.text-center.text-sm-left
+                p.mb-0.font-weight-bold Order Total:
+                    span#order-total__bottom.font-weight-normal.mx-1 90,650
+                    span.font-weight-normal.small points
+    .form-group#msg__covid
+        small.d-block.font-weight-bold.text-danger Valued Program Participant,  
+        small.mb-0.text-danger Receiving your rewards in a timely manner is extremely important to us. Typically, most orders are delivered within 7-10 business days. With the spread of COVID-19, we are experiencing some limitations in the availability of certain items and delays in shipping, in some cases up to a few weeks. We will continue to communicate any adjustments to your orders as quickly as we can, and we appreciate your patience during this time.

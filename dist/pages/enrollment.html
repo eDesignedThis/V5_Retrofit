@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <!-- DevExtreme-->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.common.css">
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.light.css">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    main{background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png');background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+    
+    
+  </style>
+  <title>Enrollment</title>
+</head>
+<body class="d-flex flex-column h-100">
+  <header class="header__1 header__public">
+    <div class="row mx-auto">
+      <div class="col-6 col-sm-3 col-xl-2 mx-auto py-2"><img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png" alt="Demo 15 header logo"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="/dist/home.html">Demo 15</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto" id="header__nav__public"></ul>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-grow-1 d-flex flex-column align-items-center py-3 py-lg-5">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 col-xl-5 mx-auto">
+          <div class="row bg-white p-4 shadow"> 
+            <div class="col-12">
+              <h1>Enrollment</h1>
+              <p class="lead mb-0">Enroll in the [program-name] Program</p><small> All fields are required</small>
+            </div>
+            <div class="col-12 text-left">
+              <form id="form__enrollment" action="">
+                <div class="form-group">
+                  <label for="enrollment__first-name">First Name</label>
+                  <input class="form-control" id="enrollment__first-name" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__last-name">Last Name</label>
+                  <input class="form-control" id="enrollment__last-name" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__birth-date">Birth Date</label>
+                  <div class="input-group date">
+                    <input class="form-control" id="enrollment__birth-date" type="text" required>
+                    <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar"></span></span></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__hire-date">Hire Date</label>
+                  <div class="input-group date">
+                    <input class="form-control" id="enrollment__hire-date" type="text" required>
+                    <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar"></span></span></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__communication-preference">Communication Preference</label>
+                  <select class="custom-select" id="enrollment__communication-preference" name="">
+                    <option value="Choose..." selected>Choose</option>
+                    <option value="Email">Emails</option>
+                    <option value="SMS/Text">SMS/Text Message</option>
+                    <option value="Push Notification">Push Notfication</option>
+                  </select><small>*Not all communication is able to be sent to your preference.</small>
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__email">Email Address</label>
+                  <input class="form-control" id="enrollment__email" type="email">
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__phone-number">Phone Number</label>
+                  <input class="form-control" id="enrollment__phone-number" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__address">Street Address</label>
+                  <input class="form-control" id="enrollment__address" type="text">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-7 mb-3 mb-lg-0">
+                      <label for="enrollment__city">City</label>
+                      <input class="form-control" id="enrollment__city" type="text">
+                    </div>
+                    <div class="col-lg-2 mb-3 mb-lg-0">
+                      <label for="enrollment__state">State</label>
+                      <input class="form-control" id="enrollment__state" type="text">
+                    </div>
+                    <div class="col-lg-3 mb-3 mb-lg-0">
+                      <label for="enrollment__zip">Zip</label>
+                      <input class="form-control" id="enrollment__zip" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group border-bottom">
+                  <h2>Create Password</h2>
+                </div>
+                <div class="form-group">
+                  <p>Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.</p>
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__password">Password</label>
+                  <input class="form-control" id="enrollment__password" type="password">
+                </div>
+                <div class="form-group">
+                  <label for="enrollment__confirm-password">Confirm Password</label>
+                  <input class="form-control" id="enrollment__confirm-password" type="password">
+                </div>
+                <div class="form-group bg-light p-3">
+                  <div class="form-check">
+                    <input class="form-check-input" id="agree__to__terms" type="checkbox">
+                    <label class="form-check-label" for="agree__to__terms">I have read and accept the <span> <a href="/dist/pages/terms.html">Terms of Use Agreement </a></span><span> that governs the site which includes my consent to receive program related emails.</span></label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block" id="enrollment_submit_btn" type="submit">Complete Enrollment</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark" id="footer__1__public">
+    <div class="row mx-auto">
+      <div class="col-12 py-2">
+        <ul class="nav justify-content-center" id="footer__nav__public">      </ul>
+      </div>
+      <div class="col-12 text-center py-2"><small class="text-light d-block mx-auto">Copyright &copy; 2020 | RewardTrax.com</small></div>
+    </div>
+  </footer>
+</body>
+<!-- Optional JavaScript-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js">
+  <!-- DevExtreme library-->
+</script>
+<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.1.6/js/dx.all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="/src/app.js"></script>

@@ -1,0 +1,27 @@
+extends ../master-templates/template__vertical__center__slim.pug
+
+block styles
+
+block meta-title
+    title Session Expired
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__public.pug
+
+block content
+    .row 
+        .col-12
+            h1 Session Expired/Not Logged In
+            p You are trying to access a page that requires you to login. If you have not logged in please do so by clicking the link below. If you have already logged in your session may have expired due to inactivity. Session expiration helps protect your account. You will need to login again to use the system.
+            a(href="./login.html") Login Now
+    
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__public.pug
+
+
+
+
+block scripts

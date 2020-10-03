@@ -1,0 +1,25 @@
+extends ./layout__full-height.pug
+
+block styles
+
+block meta-title
+    title Template: Vertical Center Slim
+
+block vertical-alignment    
+    body.d-flex.flex-column.h-100
+        block header
+            header.bg-dark.text-light
+                h1 Header
+        main.flex-grow-1.d-flex.flex-column.justify-content-center.align-items-center.py-3.py-lg-5
+            .container-fluid
+                .row.text-center
+                    .col-12.col-md-8.col-xl-5.mx-auto.p-4
+                        block content
+                            h1 Template: Slim
+                            p Use this template for pages containing only contact forms or otherwise minimal text content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis quasi doloribus perferendis, rerum dignissimos labore rem odit tenetur voluptatibus fugit veritatis hic explicabo optio nemo laboriosam! Quam aperiam excepturi minima quos? Eveniet, debitis temporibus? Est totam dicta maiores perspiciatis aspernatur labore suscipit nisi veniam incidunt esse quod repellat ad itaque officiis consectetur, porro voluptatum? Tenetur reiciendis magnam aliquid corporis totam tempore. Deleniti animi cumque vitae possimus laboriosam aliquam sit aperiam asperiores maxime alias eligendi minima, quae nesciunt delectus consequuntur quas, ab consequatur, rerum molestiae hic dolore. Accusamus omnis, saepe in consequuntur fuga porro fugit repudiandae sapiente amet exercitationem, suscipit molestiae, repellat facere consequatur natus accusantium quas alias nostrum similique sit officiis. Nisi odit amet sunt? Consequatur sint labore non dicta nulla exercitationem, ratione, alias sequi odio consectetur minus in qui cupiditate rerum provident, voluptatum beatae totam! Aut fuga doloremque, quasi asperiores reprehenderit ipsum odit natus ab modi quod labore pariatur laborum odio soluta nisi ea similique ullam sapiente recusandae nobis fugit? Unde illum tempore soluta minima ipsam maxime dolorem voluptatum cumque aut adipisci alias rem veritatis odio, dolore aspernatur at ad quis necessitatibus temporibus voluptas consequatur. Dolore, molestias eligendi, animi iusto molestiae eum consectetur vero autem ipsum ex eveniet?
+                        
+        block footer
+            footer.bg-dark.text-light
+                h2 Footer
+
+block scripts

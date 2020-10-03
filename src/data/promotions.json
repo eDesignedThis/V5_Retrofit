@@ -1,0 +1,204 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "promoName": "Promo 1 - Standard Promotion",
+      "promos": [
+        {
+          "approved": 9,
+          "pending": 3,
+          "needVerification": 13,
+          "awarded": 6
+        },
+        {
+          "approved": 4,
+          "pending": 0,
+          "needVerification": 2,
+          "awarded": 16
+        },
+        {
+          "approved": 17,
+          "pending": 14,
+          "needVerification": 17,
+          "awarded": 9
+        },
+        {
+          "approved": 17,
+          "pending": 14,
+          "needVerification": 7,
+          "awarded": 5
+        },
+        {
+          "approved": 11,
+          "pending": 7,
+          "needVerification": 16,
+          "awarded": 2
+        }
+      ],
+      "claims": [
+        {
+          "invoice": "737183112-8",
+          "productCode": "50-265-0027",
+          "claimDate": "11/5/2019",
+          "claimQty": 7,
+          "amount": 7155,
+          "payout": 49408
+        },
+        {
+          "invoice": "753466056-4",
+          "productCode": "80-541-0671",
+          "claimDate": "6/15/2020",
+          "claimQty": 19,
+          "amount": 6537,
+          "payout": 14019
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "promoName": "Promotion 2 - Goal Tiering",
+      "promos": [
+        {
+          "approved": 6,
+          "pending": 16,
+          "needVerification": 15,
+          "awarded": 15
+        },
+        {
+          "approved": 9,
+          "pending": 15,
+          "needVerification": 14,
+          "awarded": 6
+        },
+        {
+          "approved": 5,
+          "pending": 17,
+          "needVerification": 14,
+          "awarded": 9
+        },
+        {
+          "approved": 13,
+          "pending": 16,
+          "needVerification": 7,
+          "awarded": 16
+        }
+      ],
+      "claims": [
+        {
+          "invoice": "137834987-3",
+          "productCode": "50-409-5835",
+          "claimDate": "3/6/2020",
+          "claimQty": 20,
+          "amount": 1904,
+          "payout": 18186
+        },
+        {
+          "invoice": "905800131-8",
+          "productCode": "53-312-0638",
+          "claimDate": "9/25/2019",
+          "claimQty": 10,
+          "amount": 2984,
+          "payout": 39532
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "promoName": "Promotion 3 - Verification",
+      "promos": [
+        {
+          "approved": 17,
+          "pending": 3,
+          "needVerification": 3,
+          "awarded": 8
+        }
+      ],
+      "claims": [
+        {
+          "invoice": "097096546-X",
+          "productCode": "15-140-3440",
+          "claimDate": "10/1/2019",
+          "claimQty": 20,
+          "amount": 196,
+          "payout": 324
+        },
+        {
+          "invoice": "985040338-1",
+          "productCode": "90-255-5536",
+          "claimDate": "7/12/2020",
+          "claimQty": 11,
+          "amount": 6730,
+          "payout": 46825
+        },
+        {
+          "invoice": "810782210-2",
+          "productCode": "88-181-1340",
+          "claimDate": "2/10/2020",
+          "claimQty": 13,
+          "amount": 393,
+          "payout": 21551
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "promoName": "Promotion 4 - Upload on Claims Form",
+      "promos": [
+        {
+          "approved": 15,
+          "pending": 17,
+          "needVerification": 12,
+          "awarded": 5
+        },
+        {
+          "approved": 13,
+          "pending": 16,
+          "needVerification": 2,
+          "awarded": 1
+        }
+      ],
+      "claims": [
+        {
+          "invoice": "813208653-8",
+          "productCode": "67-269-1300",
+          "claimDate": "6/13/2020",
+          "claimQty": 19,
+          "amount": 928,
+          "payout": 13041
+        },
+        {
+          "invoice": "542074154-7",
+          "productCode": "06-487-3827",
+          "claimDate": "2/17/2020",
+          "claimQty": 19,
+          "amount": 1453,
+          "payout": 47938
+        },
+        {
+          "invoice": "024727563-8",
+          "productCode": "38-983-4196",
+          "claimDate": "2/12/2020",
+          "claimQty": 6,
+          "amount": 3698,
+          "payout": 31631
+        },
+        {
+          "invoice": "088674852-6",
+          "productCode": "55-889-4049",
+          "claimDate": "11/18/2019",
+          "claimQty": 11,
+          "amount": 4864,
+          "payout": 49043
+        },
+        {
+          "invoice": "494964037-2",
+          "productCode": "96-082-5617",
+          "claimDate": "12/2/2019",
+          "claimQty": 17,
+          "amount": 2982,
+          "payout": 8136
+        }
+      ]
+    }
+  ]
+}

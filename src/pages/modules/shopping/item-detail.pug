@@ -1,0 +1,63 @@
+extends ../../../master-templates/template__width__full.pug
+
+block styles
+    style.
+        main{padding-top: 0!important;}
+
+
+block meta-title
+    title Shopping Item Detail
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../../../master-templates/components/shopping/shopping-header.pug
+    include ../../../master-templates/components/shopping/shopping-navigation/shopping-sections-tab.pug
+
+    //- .row.section.section__reward-yourself.bg-light.py-5.d-none.d-md-block
+    //-     .col-12.col-xl-10.text-left.mx-auto
+    //-         h2 Item Detail
+
+    //-     .col-12.col-xl-10.text-left.mx-auto
+            
+    
+
+    .row.section.section__featured-categories.pt-5.pb-3
+     
+        .col-12.col-xl-10.text-left.mx-auto.mb-3
+            include ../../../master-templates/components/shopping/item-detail/item-detail-title.pug
+        .col-12.col-xl-10.mx-auto#item__detail__content__wrapper
+            .row
+                .col-12.col-md-6.col-lg-7#item__detail__content__images
+                    include ../../../master-templates/components/shopping/item-detail/item-detail__images.pug            
+            
+                .col-12.col-md-4.offset-md-1#item__detail__content__price.bg-light.pt-3
+                    include ../../../master-templates/components/shopping/item-detail/item-detail__price.pug
+                    include ../../../master-templates/components/shopping/item-detail/item-detail__delivery-options.pug
+                    include ../../../master-templates/components/shopping/item-detail/item-detail__select-quantity.pug
+                    include ../../../master-templates/components/shopping/item-detail/item-detail__add-to-cart.pug
+                    
+            .row.text-left
+                .col-12
+                    p.font-weight-bold Description
+                .col-12
+                    #item__description
+                        p MacBook Pro has a tenth-generation quad-core Intel processor with Turbo Boost up to 3.8GHz. A brilliant and colorful Retina display with True Tone technology for a more true-to-life viewing experience. A backlit Magic Keyboard and Touch ID. Fast integrated graphics. And the versatile Touch Bar for more ways to be productive. It's Apple's most powerful 13-inch notebook. Pushed even further. 
+                        p.font-weight-bold What's Included
+                        ul
+                            li Apple MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model)
+                            li 61W USB-C power adapter
+                            li USB-C charge cable (2m)
+                .col-12.col-md-6.col-xl-4#CA__warning
+                        include ../../../master-templates/components/shopping/item-detail/item-detail__CA-warning.pug
+
+                    
+
+                
+                
+                    
+    .row.section.section__disclaimer
+        .col-12.col-xl-10.text-left.mx-auto
+            include ../../../master-templates/components/shopping/shopping-disclaimer.pug

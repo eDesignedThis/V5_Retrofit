@@ -1,0 +1,71 @@
+form#form__enrollment(action="")
+    .form-group
+        label(for="enrollment__first-name") First Name
+        input.form-control#enrollment__first-name(type="text")
+    .form-group
+        label(for="enrollment__last-name") Last Name
+        input.form-control#enrollment__last-name(type="text")
+    .form-group
+        label(for="enrollment__birth-date") Birth Date
+        .input-group.date
+            input#enrollment__birth-date.form-control(type="text" required)
+            .input-group-append
+                span.input-group-text
+                    span.fas.fa-calendar
+    .form-group
+        label(for="enrollment__hire-date") Hire Date
+        .input-group.date
+            input#enrollment__hire-date.form-control(type="text" required)
+            .input-group-append
+                span.input-group-text
+                    span.fas.fa-calendar
+    .form-group
+        label(for="enrollment__communication-preference") Communication Preference
+        select#enrollment__communication-preference.custom-select(name="")
+            option(value="Choose..." selected) Choose
+            option(value="Email") Emails
+            option(value="SMS/Text") SMS/Text Message
+            option(value="Push Notification") Push Notfication
+        small *Not all communication is able to be sent to your preference.
+    .form-group
+        label(for="enrollment__email") Email Address
+        input.form-control#enrollment__email(type="email")
+    .form-group
+        label(for="enrollment__phone-number") Phone Number
+        input.form-control#enrollment__phone-number(type="text")
+    .form-group
+        label(for="enrollment__address") Street Address
+        input.form-control#enrollment__address(type="text")
+    .form-group
+        .row
+            .col-lg-7.mb-3.mb-lg-0
+                label(for="enrollment__city") City
+                input.form-control#enrollment__city(type="text")
+            .col-lg-2.mb-3.mb-lg-0
+                label(for="enrollment__state") State
+                input.form-control#enrollment__state(type="text")
+            .col-lg-3.mb-3.mb-lg-0
+                label(for="enrollment__zip") Zip
+                input.form-control#enrollment__zip(type="text")
+    
+
+
+    .form-group.border-bottom
+        h2 Create Password
+    .form-group
+        p Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.
+    .form-group
+        label(for="enrollment__password") Password
+        input.form-control#enrollment__password(type="password")
+    .form-group
+        label(for="enrollment__confirm-password") Confirm Password
+        input.form-control#enrollment__confirm-password(type="password")
+    .form-group.bg-light.p-3
+        .form-check
+            input.form-check-input#agree__to__terms(type="checkbox")
+            label.form-check-label(for="agree__to__terms") I have read and accept the 
+                span 
+                    a(href="/dist/pages/terms.html") Terms of Use Agreement 
+                span  that governs the site which includes my consent to receive program related emails.
+    .form-group
+        button.btn.btn-primary.btn-block#enrollment_submit_btn(type='submit') Complete Enrollment

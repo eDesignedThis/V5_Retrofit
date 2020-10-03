@@ -1,0 +1,39 @@
+extends ../../../master-templates/template__width__slim.pug
+
+block styles
+
+block meta-title
+    title Learn & Earn
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Learn & Earn
+         
+            p The Learn & Earn Module allows your participants to earn points when they pass tests and quizzes. 
+
+        .col-12
+            h3 Thank You!
+
+        .col-12.text-left
+            .alert.alert-success 
+                p.mb-0 You have been awarded 200 points. These points are available immediately and will be reflected in your available point balance and your award history. 
+            .small.d-block.text-muted Your responses have been saved. You can see more information under the "Completed Questionnaires" heading
+                a(href="../learn-n-earn/learn-n-earn.html")  here.
+          
+
+                
+
+
+              
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts

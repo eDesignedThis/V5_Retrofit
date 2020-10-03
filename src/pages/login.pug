@@ -1,0 +1,45 @@
+extends ../master-templates/template__vertical__center__slim.pug
+
+block styles
+    style. 
+        main{background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png');background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; }
+
+block meta-title
+    title Login
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__public.pug
+
+block content
+    .row.bg-white.p-4.shadow 
+        .col-12.mb-2
+            h1 Great Experiences
+            p.lead Are a click away!
+            p Log in below to manage your account. If you are new to the program and have an Invitation ID,
+                span 
+                    a(href="./enrollment.html") enroll here.
+        .col-12.text-left
+            form(action="")
+                .form-group
+                    label(for="login__email") Email Address
+                    input.form-control#login__email(type="email")
+                .form-group
+                    label(for="login__password") Password
+                    input.form-control#login__password(type="password")
+                .form-group
+                    .row.align-items-center
+                        .col-sm-6.mb-2.mb-sm-0.order-2.order-sm-1
+                            a(href="./forgot-password.html") Forgot Your Password?
+                        .col-sm-6.order-1.order-sm-2.mb-2.mb-sm-0
+                            button.btn.btn-primary.btn-block#login_submit_btn(type='submit') Login
+                
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__public.pug
+
+
+
+
+block scripts

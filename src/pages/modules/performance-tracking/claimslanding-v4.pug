@@ -1,0 +1,31 @@
+extends ../../../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title Claims Landing V4
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Performance Tracking
+            p The Performance Tracking Module will help you track your goals online with an easy to use submission form.
+    .row.text-left
+        include ../../../master-templates/components/claims-cards/claim__type__1.pug
+        include ../../../master-templates/components/claims-cards/claim__type__2.pug
+        include ../../../master-templates/components/claims-cards/claim__type__3.pug
+        include ../../../master-templates/components/claims-cards/claim__type__4.pug
+            
+        
+block footer
+    include ../../../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts
+    

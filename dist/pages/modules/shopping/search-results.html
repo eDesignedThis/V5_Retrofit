@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <!-- DevExtreme-->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.common.css">
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.1.6/css/dx.light.css">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    main{padding-top: 0!important;}
+    
+    
+  </style>
+  <title>Shopping Search Results</title>
+</head>
+<body class="d-flex flex-column">
+  <header class="header__1 header__private bg-dark">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-xl navbar-dark">
+        <div class="row justify-content-between align-items-center"> 
+          <div class="col-9 col-sm-10 col-lg-11 col-xl-3 header__logo__branding">
+            <div class="row align-items-center"> 
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-4 border"><img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png" alt="Demo 15 header logo"></div>
+              <div class="col-12 col-sm-8 col-md-9 col-lg-10 col-xl-8 d-none d-sm-block"><a class="navbar-brand d-block small text-wrap mr-0 font-weight-bold text-uppercase" href="/dist/home.html">
+                     Demo 15 - Total Recognition<span class="small header__sub-title d-block text-capitalize">RewardTrax Branded Demo</span></a></div>
+            </div>
+          </div>
+          <div class="col-3 col-sm-2 col-md-1 d-xl-none text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          </div>
+          <div class="col-12 col-xl-9">
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav ml-auto text-xl-center" id="header__nav__private"></ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-grow-1 d-flex flex-column align-items-center">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 mx-auto">
+          <div class="row align-items-center bg-secondary py-3" id="shopping-navigation">
+            <div class="container-fluid">
+              <div class="row align-items-center"> 
+                <div class="col-8 col-sm-3 col-lg-2 mb-3 mb-sm-0 order-1">
+                  <div class="dropdown">
+                    <button class="btn btn-primary btn-block dropdown-toggle" id="megamenu_dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</button>
+                    <div class="dropdown-menu" aria-labelledby="megamenu_dropdownMenuButton">
+                      <div class="row"> 
+                        <div class="col-md-3">
+                          <h2>Column</h2>
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h2>Column</h2>
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3">
+                          <h2>Column</h2>
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">Category</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 bg-warning">
+                          <h2>Image Column</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-7 col-lg-8 col-9 mb-sm-0 order-3 order-sm-2">
+                  <div class="input-group">
+                    <div class="input-group-prepend d-none d-xl-block"> 
+                      <select class="custom-select" id="departments-select" name="">
+                        <option value="1">All Departments</option>
+                        <option value="2">Apple Store</option>
+                        <option value="3">Baby</option>
+                        <option value="4">Books</option>
+                      </select>
+                    </div>
+                    <input class="form-control" type="text">
+                    <div class="input-group-append"> <span class="input-group-text">
+                        <div class="fas fa-search"></div></span></div>
+                  </div>
+                </div>
+                <div class="col-4 col-lg-2 mx-auto col-sm-2 order-1 mb-2 mb-sm-0 order-sm-3">
+                  <div class="row align-items-center"> 
+                    <div class="col-4"><a class="text-light small" href="/dist/pages/modules/shopping/cart.html"><span class="fas fa-shopping-cart"></span><small class="d-none d-xl-block">Cart</small></a></div>
+                    <div class="col-4"><a class="text-light small" href="/dist/pages/modules/shopping/orders.html"><span class="fas fa-truck"></span><small class="d-none d-xl-block">Orders</small></a></div>
+                    <div class="col-4"><a class="text-light small" href="/dist/pages/modules/shopping/wishlist.html"><span class="fas fa-heart"></span><small class="d-none d-xl-block">Wishlist</small></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bg-primary" id="shopping-sections">
+            <div class="col-12 col-xl-10 mx-auto">
+              <div class="row small">
+                <div class="col-4 p-0"><a class="small btn btn-block btn-primary" href="#">Shopping<span class="fas fa-gifts mx-3 d-none d-sm-inline"></span></a></div>
+                <div class="col-4 p-0 border-right border-left"><a class="small btn btn-block btn-primary" href="#">Events<span class="fas fa-football-ball mx-3 d-none d-sm-inline"></span></a></div>
+                <div class="col-4 p-0"><a class="small btn btn-block btn-primary" href="#">Travel<span class="fas fa-globe-africa mx-3 d-none d-sm-inline"></span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row section section__reward-yourself bg-light py-2">
+            <div class="col-12 col-xl-10 mx-auto">
+              <div class="row align-items-center justify-content-between"> 
+                <div class="col-sm-8 text-sm-left mb-2 mb-sm-0"><small class="mb-0">1-16 of over 120,050,500 results for <span class="text-primary font-weight-bold mx-1">'[search-term]'</span></small></div>
+                <div class="col-sm-4 col-lg-2">
+                  <select class="custom-select" id="sort" name="search-filter"> 
+                    <option value="0" selected>Sort By:</option>
+                    <option value="1">Price: Low to High</option>
+                    <option value="2">Price: High to Low</option>
+                    <option value="3">Newest Arrivals</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row section section__search-results">
+            <div class="col-12 col-xl-10 text-left mx-auto mb-3 pt-2"></div>
+            <div class="col-12 col-xl-10 text-center mx-auto">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 text-left flex-column">
+                  <div class="mb-3 pb-3 border-bottom" id="filter__departments">
+                    <p class="mb-0 font-weight-bold">Departments</p>
+                    <ul class="ml-2 list-group small">
+                      <li class="border-0">Electronics</li>
+                      <li class="border-0">Audio </li>
+                      <li class="border-0">Cameras & Camcorders</li>
+                    </ul>
+                  </div>
+                  <div class="mb-3 pb-3 border-bottom" id="filter__delivery-options">
+                    <p class="mb-0 font-weight-bold">Delivery Options</p>
+                    <ul class="ml-2 list-group small">
+                      <li class="border-0">Ship to Address</li>
+                      <li class="border-0">Store Pickup</li>
+                    </ul>
+                  </div>
+                  <div class="mb-3 pb-3 border-bottom" id="filter__delivery-options">
+                    <p class="mb-0 font-weight-bold">Brand</p>
+                    <ul class="ml-2 list-group small">
+                      <li class="border-0">Apple</li>
+                      <li class="border-0">HP</li>
+                      <li class="border-0">MOSISO</li>
+                      <li class="border-0">Acer</li>
+                      <li class="border-0">Lenovo</li>
+                    </ul>
+                  </div>
+                  <div id="filter__points">
+                    <p class="mb-0 font-weight-bold">Points</p>
+                    <ul class="ml-2 list-group small">
+                      <li class="border-0">Under 250</li>
+                      <li class="border-0">500 to 600</li>
+                      <li class="border-0">600 to 700</li>
+                      <li class="border-0">800 to 1000</li>
+                      <li class="border-0">1000 & Above</li>
+                      <li class="border-0">
+                        <div class="form-group mt-3">
+                          <div class="row align-items-center"> 
+                            <div class="col-5 mb-3">
+                              <label class="font-weight-bold" for="point-min">Min</label>
+                              <input class="form-control d-block" id="point-min" type="text">
+                            </div>
+                            <div class="col-2 text-center px-0">
+                              <p class="mb-0"> -to-</p>
+                            </div>
+                            <div class="col-5 mb-3">
+                              <label class="font-weight-bold" for="point-max">Max</label>
+                              <input class="form-control d-blocki" id="point-max" type="text">
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-outline-primary btn-block" type="submit"><span class="fas fa-search"></span><span class="small d-xl-inline ml-1">Filter By Points</span></button>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9" id="shopping-cart__item__wrapper">
+                  <div class="row border-bottom mb-3">
+                    <div class="col-4 mb-4">
+                      <div class="card shopping__card mb-2"> 
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                          <div class="shopping__img-wrapper d-block mx-auto text-center"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 text-left">
+                      <div class="row" id="item__title"> 
+                        <div class="col-12 mb-3"><a class="shopping__item-title line-clamp text-dark" href="../shopping/item-detail.html">Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray</a><small><span class="font-weight-bold">Model:</span><span class="ml-2 item__model-number">[item-number]</span></small></div>
+                      </div>
+                      <div class="row text-left mb-2" id="itemPriceRow"> 
+                        <div class="col-12 col-md-4"><small class="text-success"> <span class="fas fa-certificate"></span><span class="ml-1">On Sale Now!</span></small>
+                          <p class="font-weight-bold mb-0">Price:<span class="font-weight-normal item__price mx-1 text-success">90,650</span><span class="small"><small>Points</small></span></p>
+                        </div>
+                        <div class="col-12 col-md-8"><small><span class="fas fa-running mr-1"></span><span>In-Store Pickup Available</span></small></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row border-bottom mb-3">
+                    <div class="col-4 mb-4">
+                      <div class="card shopping__card mb-2"> 
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                          <div class="shopping__img-wrapper d-block mx-auto text-center"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 text-left">
+                      <div class="row" id="item__title"> 
+                        <div class="col-12 mb-3"><a class="shopping__item-title line-clamp text-dark" href="../shopping/item-detail.html">Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray</a><small><span class="font-weight-bold">Model:</span><span class="ml-2 item__model-number">[item-number]</span></small></div>
+                      </div>
+                      <div class="row text-left mb-2" id="itemPriceRow"> 
+                        <div class="col-12 col-md-4"><small class="text-success"> <span class="fas fa-certificate"></span><span class="ml-1">On Sale Now!</span></small>
+                          <p class="font-weight-bold mb-0">Price:<span class="font-weight-normal item__price mx-1 text-success">90,650</span><span class="small"><small>Points</small></span></p>
+                        </div>
+                        <div class="col-12 col-md-8"><small><span class="fas fa-running mr-1"></span><span>In-Store Pickup Available</span></small></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row border-bottom mb-3">
+                    <div class="col-4 mb-4">
+                      <div class="card shopping__card mb-2"> 
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                          <div class="shopping__img-wrapper d-block mx-auto text-center"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 text-left">
+                      <div class="row" id="item__title"> 
+                        <div class="col-12 mb-3"><a class="shopping__item-title line-clamp text-dark" href="../shopping/item-detail.html">Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray</a><small><span class="font-weight-bold">Model:</span><span class="ml-2 item__model-number">[item-number]</span></small></div>
+                      </div>
+                      <div class="row text-left mb-2" id="itemPriceRow"> 
+                        <div class="col-12 col-md-4"><small class="text-success"> <span class="fas fa-certificate"></span><span class="ml-1">On Sale Now!</span></small>
+                          <p class="font-weight-bold mb-0">Price:<span class="font-weight-normal item__price mx-1 text-success">90,650</span><span class="small"><small>Points</small></span></p>
+                        </div>
+                        <div class="col-12 col-md-8"><small><span class="fas fa-running mr-1"></span><span>In-Store Pickup Available</span></small></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row border-bottom mb-3">
+                    <div class="col-4 mb-4">
+                      <div class="card shopping__card mb-2"> 
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                          <div class="shopping__img-wrapper d-block mx-auto text-center"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8 text-left">
+                      <div class="row" id="item__title"> 
+                        <div class="col-12 mb-3"><a class="shopping__item-title line-clamp text-dark" href="../shopping/item-detail.html">Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray</a><small><span class="font-weight-bold">Model:</span><span class="ml-2 item__model-number">[item-number]</span></small></div>
+                      </div>
+                      <div class="row text-left mb-2" id="itemPriceRow"> 
+                        <div class="col-12 col-md-4"><small class="text-success"> <span class="fas fa-certificate"></span><span class="ml-1">On Sale Now!</span></small>
+                          <p class="font-weight-bold mb-0">Price:<span class="font-weight-normal item__price mx-1 text-success">90,650</span><span class="small"><small>Points</small></span></p>
+                        </div>
+                        <div class="col-12 col-md-8"><small><span class="fas fa-running mr-1"></span><span>In-Store Pickup Available</span></small></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" id="pagination">
+                    <div class="col-6 mx-auto">
+                      <nav aria-label="Search Results Pagination">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row section section__disclaimer">
+            <div class="col-12 col-xl-10 text-left mx-auto"><small class="text-muted text-center d-block">Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <h2>Footer</h2>
+  </footer>
+</body>
+<!-- Optional JavaScript-->
+<!-- jQuery first, then Popper.js, then Bootstrap JS-->
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js">
+  <!-- DevExtreme library-->
+</script>
+<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.1.6/js/dx.all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="/src/app.js"></script>

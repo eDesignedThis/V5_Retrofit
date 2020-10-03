@@ -1,0 +1,81 @@
+extends ../../../master-templates/template__width__full.pug
+
+block styles
+    style.
+        main{padding-top: 0!important; }
+
+
+block meta-title
+    title Checkout
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../../../master-templates/components/shopping/shopping-header.pug
+
+    .row.section.section__reward-yourself.bg-light.py-2
+        .col-12.col-xl-10.text-left.mx-auto
+            h2 Checkout
+
+            
+    
+
+    .row.section.section__featured-categories.pt-5.pb-3     
+        .col-12.col-xl-10.mx-auto#shopping-checkout__content__wrapper
+            .row
+                .col-12.col-md-7#shopping-checkout__item__wrapper.order-2.order-md-1.text-left
+                    include ../../../pages/forms/form__checkout.pug
+                
+                            
+
+
+                            
+            
+                .col-12.col-md-5.col-lg-4.offset-lg-1#item__detail__content__price.bg-light.pt-3.text-left.order-1.order-md-2.mb-4.mb-md-0
+                    .row
+                        .col-12.mb-4
+                            .row.text-left#itemPriceRow
+                                    //- .col-6.mb-2
+                                    //-     small.font-weight-bold Balance before purchase 
+                                    //- .col-6.text-right
+                                    //-     small.mb-0 1,929,958
+                                    //- .col-6.mb-2
+                                    //-     small.font-weight-bold Balance after purchase 
+                                    //- .col-6.text-right
+                                    //-     small.mb-0 1,839,308
+                                    .col-6.mb-2
+                                        small.font-weight-bold Shipping & Sales Tax 
+                                    .col-6.text-right
+                                        p.mb-0 Included
+                                    .col-6.mb-2
+                                        p.font-weight-bold.mb-0 Order Total 
+                                            span.small
+                                                small.ml-1.d-md-block.d-xl-inline (In Points)
+                                    .col-6.text-right
+                                            span.font-weight-normal.item__price.mx-1.text-success 90,650
+                                    .col-6
+                                        small.font-weight-bold.d-block.mb-0 Points Remaining
+                                    .col-6.text-right
+                                        small.d-block.mb-3 1,839,308
+                                    .col-12
+                                        button.btn.btn-primary.btn-block.d-md-none(type="button") Continue Checkout
+                        .col-12.mb-4
+                            p.border-bottom Purchasing Information
+                            small.d-block.mb-2 The points displayed here at the time you submit your order will govern the redemption of all products.
+                            small.d-block The points required to purchase your items will be deducted from your account balance. 
+                        .col-12
+                            p.border-bottom Order Processing
+                            small.d-block Here's how our order processing works:
+                            ul.small
+                                li First, we convert your points to a currency equivalent. For example, we may convert your points into a US dollar equivalent.
+                                li Next, using a background program account for currency transactions, we make the purchase of your item from a supplier on your behalf, for instance in dollars.
+                                li Then, we subtract the corresponding number of points from your point account. The items are shipped to you 
+                                    span.font-italic.font-weight-bold directly from the supplier
+                                    | .
+                        .col-12.mb-4
+                            small.d-block.mb-2 Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. 
+                            small.d-block Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.
+                    
+                    

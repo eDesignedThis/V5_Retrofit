@@ -1,0 +1,86 @@
+
+<form id="form__profile" action="">
+  <div class="form-group">
+    <label for="profile__first-name">First Name</label>
+    <input class="form-control" id="profile__first-name" type="text"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__last-name">Last Name</label>
+    <input class="form-control" id="profile__last-name" type="text"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__birth-date">Birth Date</label>
+    <div class="input-group date">
+      <input class="form-control" id="profile__birth-date" type="text" required="required"/>
+      <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar"></span></span></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="profile__hire-date">Hire Date</label>
+    <div class="input-group date">
+      <input class="form-control" id="profile__hire-date" type="text" required="required"/>
+      <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar"></span></span></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="profile__communication-preference">Communication Preference</label>
+    <select class="custom-select" id="profile__communication-preference" name="">
+      <option value="Choose..." selected="selected">Choose</option>
+      <option value="Email">Emails</option>
+      <option value="SMS/Text">SMS/Text Message</option>
+      <option value="Push Notification">Push Notfication</option>
+    </select><small>*Not all communication is able to be sent to your preference.</small>
+  </div>
+  <div class="form-group border-bottom">
+    <p>When changing your email address, you must provide your Current Password to verify your identity.</p>
+  </div>
+  <div class="form-group">
+    <label for="profile__email">Email Address</label>
+    <input class="form-control" id="profile__email" type="email"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__phone-number">Phone Number</label>
+    <input class="form-control" id="profile__phone-number" type="text"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__address">Street Address</label>
+    <input class="form-control" id="profile__address" type="text"/>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-lg-7 mb-3 mb-lg-0">
+        <label for="profile__city">City</label>
+        <input class="form-control" id="profile__city" type="text"/>
+      </div>
+      <div class="col-lg-2 mb-3 mb-lg-0">
+        <label for="profile__state">State</label>
+        <input class="form-control" id="profile__state" type="text"/>
+      </div>
+      <div class="col-lg-3 mb-3 mb-lg-0">
+        <label for="profile__zip">Zip</label>
+        <input class="form-control" id="profile__zip" type="text"/>
+      </div>
+    </div>
+  </div>
+  <div class="form-group border-bottom">
+    <h2>Update Password</h2>
+  </div>
+  <div class="form-group">
+    <p>Use the fields below to change your password. All fields are required when changing your password. If you do not want to change your password, leave the fields blank. Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.</p>
+  </div>
+  <div class="form-group">
+    <label for="profile__password">Current Password</label>
+    <input class="form-control" id="profile__password" type="password"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__new-password">New Password</label>
+    <input class="form-control" id="profile__password" type="password"/>
+  </div>
+  <div class="form-group">
+    <label for="profile__confirm-new-password">Confirm New Password</label>
+    <input class="form-control" id="profile__confirm-password" type="password"/>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary btn-block" id="profile_submit_btn" type="submit">Complete profile</button>
+  </div>
+</form>

@@ -1,0 +1,48 @@
+extends ../../../../master-templates/template__width__slim.pug
+
+block styles
+
+block meta-title
+    title Claims Submission Form - 1
+
+
+block header
+    include ../../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 Submit A Claim
+            p Please complete the fields below. Fields marked with * are required.
+        .col-12
+            .alert.alert-info
+                small.mb-0 
+                    span.font-weight-bold Admin Messaging Area
+                    |   This area is reserved for any special text required by the A.M or whoever is setting up the claim form. This can also be hidden if no special instructions are necessary.
+    .row.text-left 
+        .col-12
+            form.mb-0(action="")
+                .form-group
+                    label(for="customer_company") Customer Company
+                    input#customer_company.form-control(type="text" required)
+                .form-group
+                    label(for="customer_first_name") Customer First Name
+                    input#customer_first_name.form-control(type="text" required)
+                .form-group
+                    label(for="customer_last_name") Customer Last Name
+                    input#customer_last_name.form-control(type="text" required)
+                .form-group
+                    label(for="customer_email") Customer Email
+                    input#customer_email.form-control(type="text" required)
+                .form-group
+                    label(for="customer_address") Customer Address
+                    textarea#customer_address.form-control(type="text" required)
+                .form-group
+                    label(for="customer_phone") Customer Phone
+                    input#customer_phone.form-control(type="text" required)   
+                .form-group.mb-0
+                    .row.justify-content-center 
+                        .col-6.col-sm-4
+                            a.btn.btn-outline-primary.btn-block#cancel_add_product(href="#") Cancel
+                        .col-6.col-sm-4
+                            a.btn.btn-primary.btn-block#submit_claim_btn(href="#") Submit

@@ -1,0 +1,136 @@
+extends ../../../master-templates/template__width__full.pug
+
+block styles
+    style.
+        main{padding-top: 0!important; }
+
+
+block meta-title
+    title Receipt
+
+
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    include ../../../master-templates/components/shopping/shopping-header.pug
+
+    .row.section.section__reward-yourself.bg-light.py-2
+        .col-12.col-xl-10.text-left.mx-auto
+            h2 Thank You!
+
+            
+    
+
+    .row.section.section__featured-categories.pt-5.pb-3     
+        .col-12.col-xl-10.mx-auto#shopping-cart__content__wrapper
+            .row
+                .col-12.col-md-7.text-left
+                    .row#order-confirmation-info
+                        .col-12 
+                            .alert.alert-success
+                                    .row.small 
+                                        .col-12 
+                                            p.lead Your Order Is Confirmed!
+                                        .col-5.col-md-4.col-lg-3 
+                                            p.mb-0 Order Number:
+                                        .col-7.col-md-8.col-lg-9
+                                            p.mb-0.font-weight-bold DEMO152060124579
+                                        .col-5.col-md-4.col-lg-3 
+                                            p.mb-0 Order Date: 
+                                        .col-7.col-md-8.col-lg-9
+                                            p.mb-0 9/28/2020
+                                        .col-5.col-md-4.col-lg-3 
+                                            p Order Total: 
+                                        .col-7.col-md-8.col-lg-9
+                                            p.font-weight-bold 90,650
+                                        .col-12 
+                                            p Your order has been received and is currently being processed. Emails about this order will be sent to [email-address]. 
+                                        .col-12
+                                            p.font-weight-bold You will receive two (2) emails:
+                                            ul
+                                                li You will receive a confirmation email after we have placed the order with the supplier.
+                                                li You will receive another email when the supplier ships your item, or when it is available for pickup. 
+                                                    span.font-italic Please do not go to your pick up location until you've received the email to do so.
+                 
+                            
+                    .row#recipient-info__wrapper.mb-4
+                        .col-12
+                            .card
+                                .card-body
+                                    .row
+                                        .col-12.mb-4.mb-sm-0.col-sm-6
+                                            p.font-weight-bold.mb-0 Order Recipient
+                                            small.d-block Demo User
+                                            small.d-block 123 Main St
+                                            small.d-block Somewhere, USA 30341
+                                            small.d-block United States
+                                            small.d-block Phone (555) 555-5555
+                                        .col-12.col-sm-6   
+                                            p.font-weight-bold.mb-0 Delivery Method
+                                            small.d-block In-Store Pickup
+                                                ul
+                                                    li Best Buy Northlake
+                                                    li 
+                                                        a(href="#") Directions
+                                            small.d-block Ship to Address
+                    -for(i=0; i<4; i++)
+                        .row.border-bottom.mb-3.small
+                            
+                            .col-4.mb-4
+                                .card.h-100.shopping__card.mb-2 
+                                    .card-body.d-flex.flex-column.justify-content-center.align-items-center
+                                        .shopping__img-wrapper.d-block.mx-auto.text-center
+                                            img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6287/6287730_sb.jpg", alt="")
+                            .col-8.text-left
+                                .row#item__title 
+                                    .col-12.mb-3
+                                        .shopping__item-title.line-clamp Apple - MacBook Pro - 13" Display with Touch Bar - Intel Core i5 - 16GB Memory - 1TB SSD (Latest Model) - Space Gray
+                                .row.text-left#itemPriceRow.mb-2 
+                                    .col-12.col-lg-4
+                                        
+                                        p.font-weight-bold.mb-0 Price:
+                                            span.font-weight-normal.item__price.mx-1.text-success 90,650
+                                            span.small
+                                                small Points
+                                    .col-12.col-lg-8.text-md-left.text-lg-right.d-none
+                                        small
+                                            span.fas.fa-running.mr-1
+                                            span In-Store Pickup Available
+                                .row.align-items-center.mb-4 
+                                    .col-12.col-sm-6.mb-3
+                                        p.font-weight-bold(for='Qty') Quantity:
+                                            span.font-weight-normal.ml-1 1
+                                   
+
+
+                            
+            
+                .col-12.col-md-5.col-lg-4.offset-lg-1#item__detail__content__price.bg-light.pt-3.text-left
+                    .row
+                        .col-12.mb-2
+                            .row.text-left#itemPriceRow.mb-2
+                                    .col-6.mb-2
+                                        small.font-weight-bold Shipping & Sales Tax 
+                                    .col-6.text-right
+                                        p.mb-0 Included
+                                    .col-6.mb-2
+                                        p.font-weight-bold.mb-0 Order Total 
+                                            span.small
+                                                small.ml-1.d-md-block.d-xl-inline (In Points)
+                                    .col-6.text-right
+                                            span.font-weight-normal.item__price.mx-1.text-success 90,650
+                                    .col-6
+                                        small.d-block.mb-0 Points Remaining
+                                    .col-6.text-right
+                                        p 123,483,000
+                                    
+                                            
+                        .col-12.mb-4
+                            small.font-weight-bold.d-block For Fast Answers... 
+                            small.d-block We hope you enjoy your reward. If you have any questions or need to return an item, please use the form on the Contact page. Your items may be shipped by a third party. However, all questions about your order should be directed to us via the form on the Contact page. Please do not contact any third party directly as they may not have a complete record of your order. Remember for Fast Answers:
+                            small.d-block.font-weight-bold.my-2 Please use the form on the contact page.
+                            small.d-block.mb-2 Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. 
+                            small.d-block Some content is provided by a third party on an as-is basis. This content is subject to change and/or removal at any time. Points and availability of items are subject to change.
+                    
+                    

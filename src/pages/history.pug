@@ -1,0 +1,57 @@
+extends ../master-templates/template__width__normal.pug
+
+block styles
+
+block meta-title
+    title My Account
+
+
+block header
+    include ../master-templates/headers/header--1/header__1__private.pug
+
+block content
+    .row 
+        .col-12
+            h1 My Account
+            p Here you can view your order history detailing all of the points you have redeemed. 
+
+    .row
+        .col-12.mb-3.text-left
+            h3 My Promotions
+            
+        .col-12.text-left
+            #promotions-grid
+        
+        .col-12.text-left.bg-light.pt-3
+            h3 My Points
+
+        .col-12.mb-3.text-left.bg-light.pb-3
+            .row 
+                -for(i=0; i< 3; i++)
+                    .col-lg-4.mb-3
+                        .card.shadow.border-0
+                            .card-body
+                                .row.align-items-xl-center 
+                                    .col-5
+                                        p.mb-0 Approved
+                                    .col-7.text-right
+                                        span.points_awarded.font-weight-bold.d-block 123,234,345,000
+        
+        .col-12.mb-3.text-left
+            h3 My Transaction History
+
+        .col-12.text-left 
+            #transactions-grid   
+
+
+
+
+            
+        
+block footer
+    include ../master-templates/footers/footer--1/footer__1__private.pug
+
+
+
+
+block scripts
