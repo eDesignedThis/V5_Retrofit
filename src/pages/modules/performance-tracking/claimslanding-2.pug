@@ -6,85 +6,85 @@ block meta-title
     title Claims Landing 2
 
 
-        block header
-            include ../../../master-templates/headers/header--1/header__1__private.pug
+block header
+    include ../../../master-templates/headers/header--1/header__1__private.pug
 
-        block content
-            .row 
-                .col-12
-                    h1 Claims Landing 2
-                    p Updated layouts for promotion items.
-            .row.text-left
-                .col-12
-                    h2 Option - 1
-            .row.justify-content-center
-                -for(i=0; i<4; i++) 
-                    .col-12.col-md-6.col-xl-3.mb-4
-                        .card.h-100
-                            .bg-primary.pt-5
-                                .rounded-circle.mx-auto.mb-n5.d-flex.flex-column.justify-content-center(style="height: 100px; width: 100px; background: #cacaca; border: 5px solid #fff;")
-                                    h4.h1.text-secondary
-                                        span.d-block.fas.fa-chess-pawn
-                            .card-body.pt-5
-                                a(href="#")
-                                    h5.card-title Promotion Title
-                                small.d-block.text-muted.mb-3 
-                                    span.font-weight-bold Valid 
-                                    |   1/1/2020 - 12/31/2020
-                                .card-text.mb-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at quis eaque molestias fugiat cupiditate.
-                                a.btn.btn-primary.btn-block(href="#") Go To Promotion
-            .row.text-left
-                .col-12
-                    h2 Option - 2
-            .row
-                -for(i=0; i<4; i++) 
-                    .col-12.mb-4
-                        .card
-                            .row 
-                                .col-4.col-sm-2.bg-primary.d-flex.flex-column.justify-content-center.align-items.center
-                                    .display-3.h1.text-white
-                                        span.d-block.fas.fa-chess-pawn
-                                .col-8.col-sm-10
-                                    .card-body.text-left
-                                        .row.align-items-center 
-                                            .col-12.col-sm-7
-                                                a(href="#")
-                                                    h5.card-title Promotion Title
-                                            .col-12.col-sm-5.text-md-right
-                                                small.d-block.text-muted.mb-3 
-                                                    span.font-weight-bold Valid 
-                                                    |   1/1/2020 - 12/31/2020
-                                        .row
-                                            .col-12
-                                                .card-text.mb-3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus nam adipisci, similique quibusdam voluptate earum reiciendis labore. Autem, laborum praesentium.
+block content
+    .row 
+        .col-12
+            h1 Claims Landing 2
+            p Updated layouts for promotion items.
+    .row.text-left
+        .col-12
+            h2 Option - 1
+    .row.justify-content-center
+        -for(i=0; i<4; i++) 
+            .col-12.col-md-6.col-xl-3.mb-4
+                .card.h-100
+                    .bg-primary.pt-5
+                        .rounded-circle.mx-auto.mb-n5.d-flex.flex-column.justify-content-center(style="height: 100px; width: 100px; background: #cacaca; border: 5px solid #fff;")
+                            h4.h1.text-secondary
+                                span.d-block.fas.fa-chess-pawn
+                    .card-body.pt-5
+                        a(href="#")
+                            h5.card-title Promotion Title
+                        small.d-block.text-muted.mb-3 
+                            span.font-weight-bold Valid 
+                            |   1/1/2020 - 12/31/2020
+                        .card-text.mb-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate at quis eaque molestias fugiat cupiditate.
+                        a.btn.btn-primary.btn-block(href="#") Go To Promotion
+    .row.text-left
+        .col-12
+            h2 Option - 2
+    .row
+        -for(i=0; i<4; i++) 
+            .col-12.mb-4
+                .card
+                    .row 
+                        .col-4.col-sm-2.bg-primary.d-flex.flex-column.justify-content-center.align-items.center
+                            .display-3.h1.text-white
+                                span.d-block.fas.fa-chess-pawn
+                        .col-8.col-sm-10
+                            .card-body.text-left
+                                .row.align-items-center 
+                                    .col-12.col-sm-7
+                                        a(href="#")
+                                            h5.card-title Promotion Title
+                                    .col-12.col-sm-5.text-md-right
+                                        small.d-block.text-muted.mb-3 
+                                            span.font-weight-bold Valid 
+                                            |   1/1/2020 - 12/31/2020
+                                .row
+                                    .col-12
+                                        .card-text.mb-3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus nam adipisci, similique quibusdam voluptate earum reiciendis labore. Autem, laborum praesentium.
 
-                                        .row 
-                                            .col-12.col-sm-5.col-md-4.col-lg-3
-                                                a.btn.btn-primary.btn-block(href="#") Go To Promotion
-            .row.text-left
-                .col-12
-                    h2 Option - 3
-            .row
-                -for(i=0; i<4; i++)
-                    .col-12.col-md-6.mb-4
-                        .card
-                            .card-body
-                                a(href="#") 
-                                    h4.card-title 
-                                        span.fas.fa-chess-pawn
-                                        |   Promotion Title 
-                                small.d-block.text-muted.mb-3 
-                                    span.font-weight-bold Valid 
-                                    |   1/1/2020 - 12/31/2020
-                                .card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sapiente.
-
-
-            
+                                .row 
+                                    .col-12.col-sm-5.col-md-4.col-lg-3
+                                        a.btn.btn-primary.btn-block(href="#") Go To Promotion
+    .row.text-left
+        .col-12
+            h2 Option - 3
+    .row
+        -for(i=0; i<4; i++)
+            .col-12.col-md-6.mb-4
+                .card
+                    .card-body
+                        a(href="#") 
+                            h4.card-title 
+                                span.fas.fa-chess-pawn
+                                |   Promotion Title 
+                        small.d-block.text-muted.mb-3 
+                            span.font-weight-bold Valid 
+                            |   1/1/2020 - 12/31/2020
+                        .card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sapiente.
 
 
-                        
-        block footer
-            footer.bg-dark.text-light
-                h2 Footer
+    
+
+
+                
+block footer
+    footer.bg-dark.text-light
+        h2 Footer
 
 block scripts
